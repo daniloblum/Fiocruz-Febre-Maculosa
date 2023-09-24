@@ -9,11 +9,11 @@
 }
 /* .sidebar .h6 {
 	font-weight: 400;
-	color: var(--secondary-color-extra-light);
+	color: var(--fio-sys-primary-color-extra-light);
 }
 .sidebar .h5 {
 	font-weight: 500;
-	color: var(--secondary-color-extra-light);
+	color: var(--fio-sys-primary-color-extra-light);
 } */
 .sidebar__section--contrast {
 	background-color: rgba(0, 0, 0, 0.15);
@@ -24,51 +24,56 @@
 	transform: translate(0, 0);
 	transform: translate3d(0, 0, 0);
 	will-change: position, transform;
-	background-color: var(--secondary-color);
+	background-color: var(--fio-sys-primary-color);
 	min-height: 100vh;
 }
+
 .sidebar__inner hr {
-	background: var(--secondary-color-light);
+	background: var(--fio-sys-tertiary-color-light);
 	margin: 0px 20px;
 	opacity: 0.5;
 }
+
 .sidebar__header {
-	padding: 30px 20px;
+	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-md);
 }
+
 .sidebar__header h1 {
 	display: block;
-	color: var(--secondary-color-extra-light) !important;
+	color: var(--fio-sys-tertiary-color-extra-light) !important;
 	margin-bottom: 0;
 	line-height: 1.25;
-	font-size: 2rem;
+	font-size: var(--fio-sys-typography-head-md-size);
 }
+
 .sidebar__header h1 span {
 	display: block;
-	color: var(--secondary-color-extra-light) !important;
-	font-family: 'Montserrat SemiBold', sans-serif !important;
+	color: var(--fio-sys-tertiary-color-extra-light) !important;
+	font-family: var(--fio-sys-typography-strong-family);
 	margin: 10px 0;
 	line-height: 1.5;
-	font-size: 1.25rem;
+	font-size: var(--fio-sys-typography-paragraph-size);
 }
 .sidebar__section {
 	padding: 20px 0;
 }
 /* .sidebar__section h3 {
 	display: block;
-	color: var(--secondary-color-extra-light) !important;
+	color: var(--fio-sys-primary-color-extra-light) !important;
 	line-height: 1.25;
 	padding: 0 20px;
 }
 .sidebar__section h3 span {
 	display: block;
 	font-family: 'Montserrat SemiBold', sans-serif;
-	color: var(--secondary-color-extra-light) !important;
+	color: var(--fio-sys-primary-color-extra-light) !important;
 	margin-bottom: 10px;
 } */
 .sidebar__section .pre-title {
 	display: block;
-	font-family: 'Montserrat SemiBold', sans-serif;
-	color: var(--secondary-color-extra-light) !important;
+	font-family: var(--fio-sys-typography-head-family), sans-serif;
+	font-size: var(--fio-sys-typography-paragraph-size);
+	color: var(--fio-sys-tertiary-color-extra-light) !important;
 	margin-bottom: 10px;
 	padding: 0 20px;
 }
@@ -115,18 +120,18 @@
 	content: 'circle';
 	font-size: 20px;
 	margin-right: 10px;
-	color: var(--secondary-color-extra-light);
+	color: var(--fio-sys-primary-color-extra-dark);
 	opacity: 1;
-	font-variation-settings: 'FILL' 0;
+	font-variation-settings: 'FILL' 1;
 }
 .sidebar__topic-list .sidebar__list-item .material-symbols-rounded[status='selected']::before {
-	color: var(--primary-color);
+	color: var(--fio-sys-tertiary-color);
 	opacity: 1;
 	font-variation-settings: 'FILL' 1;
 }
 .sidebar__topic-list .sidebar__list-item .material-symbols-rounded[status='completed']::before {
 	content: 'check_circle';
-	color: var(--primary-color);
+	color: var(--fio-sys-tertiary-color);
 	opacity: 1;
 	font-variation-settings: 'FILL' 1;
 	font-weight: 600;
@@ -140,10 +145,10 @@
 	position: absolute;
 	display: block;
 	top: 32px;
-	left: 29px;
-	width: 2px;
+	left: 28px;
+	width: 4px;
 	height: calc(100% - 24px);
-	background-color: var(--secondary-color-extra-light);
+	background-color: var(--fio-sys-primary-color-extra-dark);
 	z-index: 0;
 	opacity: 0.7;
 }
@@ -155,7 +160,7 @@
 	left: 29px;
 	width: 2px;
 	height: calc(100% - 24px);
-	background-color: var(--primary-color);
+	background-color: var(--fio-sys-tertiary-color);
 }
 
 .sidebar__section img {
@@ -197,7 +202,7 @@
 		width: 50px;
 		border-radius: 50%;
 		margin: 20px;
-		background-color: var(--primary-color);
+		background-color: var(--fio-sys-secondary-color);
 		z-index: 100;
 		/* transition: 0.3s;
         transition-timing-function: ease-out; */
@@ -363,12 +368,12 @@
 	}
 	.sidebar-toggle--close {
 		right: 0;
-		background-color: var(--primary-color) !important;
+		background-color: var(--fio-sys-secondary-color) !important;
 	}
 	.sidebar-toggle--open {
 		/* left:calc(100vw - 25%); */
 		right: 0;
-		background-color: var(--primary-color-dark) !important;
+		background-color: var(--fio-sys-secondary-color-dark) !important;
 	}
 	.touch-enable {
 		touch-action: inherit;

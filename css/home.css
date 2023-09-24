@@ -1,86 +1,121 @@
-/* s */
+/* Home */
+@import '-reference.css';
+@import '-system.css';
 
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	background-color: #fbfbfb;
+	background-color: var(--fio-background-neutral-color);
 }
 
-header {
-	position: relative;
-	z-index: 1;
-	background-image: linear-gradient(0deg, #40deff, #ffffff);
-}
+
 header,
 .layer-parallax {
-	height: 600px;
+	/* height: 800px; */
+	height: 100vh;
 }
+
 #header-title {
 	background: transparent;
+	padding-bottom:150px;
 }
-#header-title h1 {
-	font-family: 'Montserrat Regular', sans-serif;
-	font-size: 26px;
-	line-height: 1.3;
-	letter-spacing: -2px;
-	text-transform: uppercase;
+
+#header-title span.logo {
+	display: block;
 	text-align: center;
-	margin: 0 auto;
 }
+
+#header-title span.logo img {
+	height:150px;
+}
+
+#header-title h1 {
+	font-family: var(--fio-ref-typography-family-secondary-regular);
+	color: var(--fio-sys-text-color-white);
+	font-size: var(--fio-ref-size-175);
+	text-align: center;
+	text-shadow: var(--fio-sys-text-shadow-header);
+	margin: 0 auto;
+	margin-bottom: var(--fio-sys-spacing-margin-xl);
+}
+	
 #header-title h1 span {
-	font-family: 'Montserrat ExtraBold', sans-serif;
-	font-size: 11vw;
+	font-family: var(--fio-ref-typography-family-primary-bold);
+	/* font-size: 11vw; */
+	font-size: var(--fio-ref-size-500);
 	line-height: 1;
 	margin-bottom: 10px;
 }
 
+#header-title h1 span.antetitulo {
+	font-family: var(--fio-ref-typography-family-primary-regular);
+	font-size: var(--fio-ref-size-200);
+	text-transform: uppercase;
+	line-height: 2;
+} 
+
+#header-title .button-primary {
+    padding: var(--fio-sys-spacing-padding-md);
+    /* border-radius: var(--fio-sys-spacing-border-radius-full); */
+}
+
 .layer-parallax {
-	background-position: bottom center;
-	background-size: auto 600px;
+	background-position: top center;
+	background-size: cover;
 	background-repeat: repeat-x;
 	width: 100%;
 	position: absolute;
 }
+
 .layer-parallax.parallax {
 	position: fixed;
 }
+
 #layer-1 {
-	background-image: url(../images/home/layer-1.png);
-}
-#layer-2 {
-	background-image: url(../images/home/layer-2.png);
-}
-#layer-3 {
-	background-image: url(../images/home/layer-3.png);
-}
-#layer-4 {
-	background-image: url(../images/home/layer-4.png);
-	background-repeat: no-repeat;
+	background-image: url(../images/home/layer-1.jpg);
 }
 
+#layer-2 {
+	background-image: url(../images/home/overlay-squares-big.png);
+	background-size: cover;
+    mix-blend-mode: overlay;
+    opacity: .75;
+}
+
+#layer-3 {
+	background-image: url(../images/home/overlay-squares-small.png);
+	background-size: cover;
+    mix-blend-mode: color-dodge;
+    opacity: .75;
+}
+
+/* #layer-4 {
+	background-image: url(../images/home/layer-4.png);
+	background-repeat: no-repeat;
+} */
+
 @media (min-width: 768px) {
-	#header-title h1 span {
+	/* #header-title h1 span {
 		font-size: 8vw;
 	}
 	#header-title h1 {
 		font-size: 40px;
-	}
+	} */
 }
 
 @media (min-width: 992px) {
-	#header-title h1 span {
+	/* #header-title h1 span {
 		font-size: 54px;
 	}
 	#header-title h1 {
 		font-size: 40px;
-	}
+	} */
 }
 
 .main {
-	background: #ffffff;
-
+	background: var(--fio-background-neutral-color);
 	z-index: 10;
 }
 
@@ -88,62 +123,78 @@ header,
 	content: '';
 	display: block;
 	position: relative;
-	background-color: var(--primary-color);
+	background-color: var(--fio-sys-tertiary-color);
 	width: 60px;
 	height: 4px;
 	margin-top: 20px;
 	left: calc(50% - 30px);
 }
 
+#course-program .container-fluid {
+	background-image: url('../images/home/bg-texture.png');
+}
+
 #course-program .icone {
 	height: 120px;
 }
-#course-program .container-fluid {
-	background-color: #eff8fb;
+
+#course-program .container:first-child p {
+	color:var(--fio-sys-secondary-color);
 }
+
 #course-program hr {
-	border-color: var(--secondary-color);
+	border-color: var(--fio-sys-primary-color);
 }
 
 #course-program .card {
 	height: 100%;
-	/* border: 1px solid var(--secondary-color); */
+	/* border: 1px solid var(--fio-sys-primary-color); */
 	box-shadow: 0 8px 16px rgba(200, 200, 200, 1);
-	padding: 20px;
+	padding: var(--fio-sys-spacing-padding-lg);
 }
 
 #course-program .card .card-header {
 	background: none;
 	padding: 10px 0 20px;
 	margin: 0;
-	border-bottom: 1px solid var(--color-light);
+	border-bottom: 1px solid var(--fio-sys-tertiary-color-dark);
 }
 
 #course-program .card .card-header :first-child {
 	margin-bottom: 0.75rem;
 	font-size: 1.15rem;
 }
+
 #course-program .card .card-header :nth-child(2) {
-	color: var(--dark-color);
+	color: var(--fio-sys-secondary-color);
 	margin-bottom: 0;
 	font-size: 1.25rem;
 }
+
 #course-program .card .card-body {
 	padding: 20px 0;
 	font-size: 1.2rem;
 }
-#course-program .card .card-body span {
-	color: var(--secondary-color-dark);
-	font-weight: 600;
+
+#course-program .card .list-group-item {
+	border-bottom: none;
+	padding: var(--fio-sys-spacing-padding-md) 0 0 0;
+
 }
+
+#course-program .card .card-body span {
+	color: var(--fio-sys-primary-color);
+	font-family: var(--fio-ref-typography-family-primary-semibold);
+}
+
 #course-program .card .card-body :last-child {
 	margin-bottom: 0;
 }
+
 #course-program .card .card-footer {
 	padding: 20px 0 0;
 	margin: 0;
 	border: none;
-	border-top: 1px solid var(--color-light);
 	background: none;
 	text-align: center;
 }
@@ -170,14 +221,14 @@ header,
 	}
 	#course-program .card .card-body {
 		border: none;
-		border-right: 1px solid var(--secondary-color-light);
-		border-left: 1px solid var(--secondary-color-light);
+		border-right: 1px solid var(--fio-sys-primary-color-light);
+		border-left: 1px solid var(--fio-sys-primary-color-light);
 		padding: 0 20px;
 		font-size: 1.2rem;
 		flex: 1 1 60%;
 	}
 	#course-program .card .card-body span {
-		color: var(--secondary-color-dark);
+		color: var(--fio-sys-primary-color-dark);
 		font-weight: 600;
 	}
 	#course-program .card .card-body :last-child {
@@ -194,7 +245,11 @@ header,
 } */
 
 footer {
+	background-color: var(--fio-background-neutral-color);
 	position: relative;
-	background-color: #ffffff;
 	z-index: 10;
+}
+
+footer .container {
+	border-top: 1px solid var(--fio-sys-tertiary-color-dark);
 }

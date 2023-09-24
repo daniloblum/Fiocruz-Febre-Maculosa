@@ -9,7 +9,7 @@
     <meta name="description" content="Curso sobre a vacina disponibilizada pela Fiocruz contra a Covid-19">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Autocuidado</title>
+    <title>Febre Maculosa</title>
 
     <!-- Favicons and Touch Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="../images/icons//apple-icon-57x57.png" />
@@ -30,10 +30,13 @@
     <meta name="msapplication-TileImage" content="../images/icons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Autocuidado - Recursos Visuais</title>
+    <title>Febre Maculosa - Recursos Visuais</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css" type="text/css" /> -->
+
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
 
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
@@ -305,7 +308,7 @@
                 </div>
             </div>
             <div class="header-wrap-clone"></div>
-        </header> -->
+        </header>
         <!-- Fim do Header -->
 
         <!-- <nav class="navbar navbar-expand-lg sticky-top bg-secondary-light">
@@ -817,204 +820,138 @@
             </div>
         </section>
 
-        <!-- Bloco - Accordion -->
-        <section id="accordion">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <!-- Heading Block (Título h2 ou h3 + Lead (se houver)) -->
-                        <div class="heading__block">
-                            <span class="heading__before">Recurso 2</span>
-                            <h3>Accordion</h3>
-                            <p class="heading__lead">Accordions são utilizados para separar grandes blocos de texto. Ao
-                                clicar o conteúdo é revelado ao usuário.</p>
+        <section class="component--accordion">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="heading__block">
+                        <span class="heading__before">Recurso #02</span>
+                        <h2 class="heading__title">Accordions</h2>
+                    </div>
+                    <p>Accordions são utilizados para separar grandes blocos de texto. Ao clicar o conteúdo é revelado ao usuário.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <h4>Opção 1</h4>
+                    <p>Utilize esse accordion quando for usado ao longo do texto corrido.</p>
+                    <div class="accordion" id="accordionExample1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingOne1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">Accordion Item #1</button>
+                            </div>
+                            <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="">
+                                <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                            </div>
                         </div>
-                        <!-- Fim do Heading Block (Título h2 ou h3 + Lead (se houver)) -->
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingTwo1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">Accordion Item #2</button>
+                            </div>
+                            <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="">
+                                <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingThree1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">Accordion Item #3</button>
+                            </div>
+                            <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="">
+                                <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <p>Pode ser de 2 tipos: com texto e com imagem. No caso das imagens, basta modificá-las</p>
-
-                        <p><strong>Obs: No accordion com texto, atente-se para o nome dado ao id do accordion!</strong>
-                        </p>
-
-                        <!-- Accordion -->
-                        <div id="accordionExample" class="accordion">
-
-                            <!-- Accordion item 1 -->
-                            <div id="headingOne" class="accordion__header">
-                                <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                    aria-controls="collapseOne"
-                                    class="d-block position-relative collapsible-link py-2">Collapsible
-                                    Group Item #1</a>
-                            </div>
-                            <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
-                                class="collapse">
-                                <div class="card-body p-4">
-                                    <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim
-                                        eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                        squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                            </div>
-
-                            <!-- Accordion item 2 -->
-                            <div id="headingTwo" class="accordion__header">
-                                <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo"
-                                    class="d-block position-relative collapsed collapsible-link py-2">Collapsible
-                                    Group Item #2</a>
-                            </div>
-                            <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample"
-                                class="collapse">
-                                <div class="card-body p-4">
-                                    <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim
-                                        eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                        squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                            </div>
-
-                            <!-- Accordion item 3 -->
-                            <div id="headingThree" class="accordion__header">
-                                <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree"
-                                    class="d-block position-relative collapsed collapsible-link py-2">Collapsible
-                                    Group Item #3</a>
-                            </div>
-                            <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample"
-                                class="collapse">
-                                <div class="card-body p-4">
-                                    <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim
-                                        eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                        squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
+                <div class="col-12 col-md-10 col-lg-6">
+                    <h4>Opção 2</h4>
+                    <p>Utilize esse accordion quando estiver dentro de outro componente (ex: dentro de .cards)</p>
+                    <div class="accordion accordion-flush" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="">
+                                <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                             </div>
                         </div>
-                        <!-- Fim do Accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="">
+                                <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="">
+                                <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Bloco - Accordion com Imagens-->
-        <section id="accordion-imagem">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <!-- Heading Block (Título h2 ou h3 + Lead (se houver)) -->
-                        <div class="heading__block">
-                            <span class="heading__before">Recurso 4</span>
-                            <h3>Accordion com imagens</h3>
-                            <p class="heading__lead">Uma outra visualização dos accordions, agora com imagens, as quais
-                                podem ser alteradas:</p>
+        <section class="component--accordion-imagens">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="heading__block">
+                        <span class="heading__before">Recurso #03</span>
+                        <h2 class="heading__title">Accordions com Imagens</h2>
+                    </div>
+                    <p>Accordions são utilizados para separar grandes blocos de texto. Ao clicar o conteúdo é revelado ao usuário.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-around mb-5">
+                <div class="col-12 col-md-10 col-lg-3">
+                    <div class="image-dropdown">
+                        <a class="image-button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="image-button-thumb">
+                                <img class="img-fluid" src="https://placehold.co/720" alt="" />
+                                <span class="pic-behind pic--1"></span>
+                                <span class="pic-behind pic--2"></span>
+                            </div>
+                            <span class="image-button-label">Label da imagem</span>
+                        </a>
+                        <div class="image-content collapse" id="collapseExample">
+                            <div class="">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
                         </div>
-                        <!-- Fim do Heading Block (Título h2 ou h3 + Lead (se houver)) -->
                     </div>
                 </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <p>Neste exemplo, para cada coluna criou-se um accordion:</p>
-                        
+                <div class="col-12 col-md-10 col-lg-3">
+                    <div class="image-dropdown">
+                        <a class="image-button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="image-button-thumb">
+                                <img class="img-fluid" src="https://placehold.co/720" alt="" />
+                                <span class="pic-behind pic--1"></span>
+                                <span class="pic-behind pic--2"></span>
+                            </div>
+                            <span class="image-button-label">Label da imagem</span>
+                        </a>
+                        <div class="image-content collapse" id="collapseExample">
+                            <div class="">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-12">
-                        <p class="text-muted mb-5 align-self-center text-center">
-                            <span class="material-symbols-rounded" style="transform: rotateX(180deg);">pan_tool_alt</span>
-                            Clique nas imagens para visualizar as informações.</p>
-                        <div class="row justify-content-around">
-                            <div class="col-10 col-md-6 col-lg-3 mb-5">
-                                <!-- Accordion Image 1 -->
-                                <div class="accordion accordion-foto">
-                                    <!--Item 1-->
-                                    <a data-toggle="collapse" class="collapsed" href="#accordion-foto1">
-                                        <!--Imagens se movimentam no Hover-->
-                                        <div class="pic-container mx-auto">
-                                            <img src="images/icone.svg" title="Fonte: unsplash.com / 720x720" alt="Descrição da imagem" class="pic pic-frente rounded" />
-                                            <span class="pic pic-tras"></span>
-                                            <span class="pic pic-tras"></span>
-                                        </div>
-                                        <!-- Fim das imagens-->
-                                        <span class="h5 text-center">Ítem 1 <span class="material-symbols-rounded">expand_more</span>
-                                        </span>
-                                    </a>
-
-                                    <div id="accordion-foto1"
-                                        class="accordion-foto-conteudo collapse card border-0 shadow p-3">
-                                        <p class="m-0 mx-auto">O crescimento <a href='' target='_blank'>acentuado</a> do
-                                            volume da literatura científica
-                                            foi acompanhado
-                                            pela “comercialização” do sistema de comunicação da ciência, e pela
-                                            perda do seu controle por
-                                            parte do mundo académico e científico.</p>
-                                    </div>
-                                </div>
+                <div class="col-12 col-md-10 col-lg-3">
+                    <div class="image-dropdown">
+                        <a class="image-button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="image-button-thumb">
+                                <img class="img-fluid" src="https://placehold.co/720" alt="" />
+                                <span class="pic-behind pic--1"></span>
+                                <span class="pic-behind pic--2"></span>
                             </div>
-
-                            <div class="col-10 col-md-6 col-lg-3 mb-5">
-                                <!-- Accordion Image 2 -->
-                                <div class="accordion accordion-foto">
-                                    <!--Item 2-->
-                                    <a data-toggle="collapse" class="collapsed" href="#accordion-foto2">
-                                        <!--Imagens se movimentam no Hover-->
-                                        <div class="pic-container mx-auto">
-                                            <img src="images/icone.svg" title="Fonte: unsplash.com / 720x720" alt="Descrição da imagem" class="pic pic-frente rounded" />
-                                            <span class="pic pic-tras"></span>
-                                            <span class="pic pic-tras"></span>
-                                        </div>
-                                        <!-- Fim das imagens-->
-                                        <span class="h5 text-center">Ítem 2 <span class="material-symbols-rounded">expand_more</span>
-                                        </span>
-                                    </a>
-
-                                    <div id="accordion-foto2"
-                                        class="accordion-foto-conteudo collapse card border-0 shadow p-3">
-                                        <p class="m-0 mx-auto">O crescimento <a href='' target='_blank'>acentuado</a> do
-                                            volume da literatura científica
-                                            foi acompanhado
-                                            pela “comercialização” do sistema de comunicação da ciência, e pela
-                                            perda do seu controle por
-                                            parte do mundo académico e científico.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-10 col-md-6 col-lg-3 mb-5">
-                                <!-- Accordion Image 3 -->
-                                <div class="accordion accordion-foto">
-                                    <!--Item 3-->
-                                    <a data-toggle="collapse" class="collapsed" href="#accordion-foto3">
-                                        <!--Imagens se movimentam no Hover-->
-                                        <div class="pic-container mx-auto">
-                                            <img src="images/icone.svg" title="Fonte: unsplash.com / 720x720" alt="Descrição da imagem" class="pic pic-frente rounded" />
-                                            <span class="pic pic-tras"></span>
-                                            <span class="pic pic-tras"></span>
-                                        </div>
-                                        <!-- Fim das imagens-->
-                                        <span class="h5 text-center">Ítem 3 <span class="material-symbols-rounded">expand_more</span>
-                                        </span>
-                                    </a>
-
-                                    <div id="accordion-foto3"
-                                        class="accordion-foto-conteudo collapse card border-0 shadow p-3">
-                                        <p class="m-0 mx-auto">O crescimento <a href='' target='_blank'>acentuado</a> do
-                                            volume da literatura científica
-                                            foi acompanhado
-                                            pela “comercialização” do sistema de comunicação da ciência, e pela
-                                            perda do seu controle por
-                                            parte do mundo académico e científico.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <span class="image-button-label">Label da imagem</span>
+                        </a>
+                        <div class="image-content collapse" id="collapseExample">
+                            <div class="">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
                         </div>
                     </div>
                 </div>
@@ -1142,9 +1079,56 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8">
                         <div class="carta">
-                            <p>Penso que o Snr. Presidente do Instituto dos Marítimos deve ser um senhor que jamais teve contato com os homens do mar, que não conhece de perto os encanecidos serviços dos homens do mar, desconhece certamente a soma enorme de sofrimentos e sacrifícios que escondemos com cara alegre, arrastando-nos a bordo, na Máquina, nas Caldeiras, nos Porões dos Navios e nos Passadiços, no último quartel de vida, sem Domingo nem dia Santo, nem noite nem dia, com bom ou mau tempo (...) Ele não sabe que a fome já bateu à porta de muitos marítimos, cujas lágrimas V. Excia como Patrono e benfeitor e Amigo dos homens do mar, num regime de Governo honesto, Moral e dedicado às classes trabalhistas, criou esta suntuosa instituição para enxugar muitas lágrimas e amparar muitas necessidades e matar muita fome às escondidas que é a mais negra.​</p>
-                            <p>Não...basta.​</p>
-                            <p>Exmo. Snro. Presidente, é urgente uma reorganização dos destinos dessa ‘Casa dos Velhos Marinheiros’ já e já antes que seja tarde demais, é preciso ter uma cabeça pensante e capaz de dirigir os destinos dessa grandiosa obra por V. Excia criada para o amparo dos velhos marinheiros que incondicionalmente são vosso amigo reconhecido e um sentinela avançado do Estado Novo. Certo de V. Excia tomar em consideração minha exposição, espero que em poucos dias receberei ordens dos dirigentes do Instituto, para que seja autorizada a minha operação.​</p>
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-12 col-md-8 col-lg-6">
+                                    <figure>
+                                        <img class="img-fluid rounded mx-auto d-block mb-3" src="../images/modulo1/mod1-aula1-ilustracao1.PNG" alt="" title="Ilustração: Nestablo Ramos">
+                                    </figure>
+                                </div>
+                                
+                                <div class="col-12 col-lg-6">
+                                    <div class="heading__block">
+                                        <span class="heading__title h5">Existe a possibilidade de surtos de febre maculosa?</span>
+                                    </div>
+                                    <p>Diferentemente da dengue, da malária e da leishmaniose, por exemplo, na maioria das vezes a Febre Maculosa Brasileira (FMB) apresenta-se como casos isolados ou como pequenos surtos, geralmente entre membros de uma mesma família ou grupos de indivíduos com atividades em comum. Surtos com dezenas ou centenas de casos não ocorrem na febre maculosa e, assim, outras doenças precisam ser consideradas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-auto">
+                                    <span class="material-symbols-rounded">share</span>
+                                </div>
+                                <div class="col">
+                                    <p class="m-0"><strong>Compartilhe este card!</strong></p>
+                                </div>
+                                <div class="col-md-auto text-center mt-3 mt-md-0">
+                                    <a class="button-secondary copy-to-clip" href="https://api.whatsapp.com/send?text=Ouça o Podcast 'Saúde Parente' do curso de PCSSI: https://mooc.campusvirtual.fiocruz.br/rea/autocuidado/images/modulo1/aula1/topico3/fiocruz_20170206_comer_pra_que_00016.jpg" data-toggle="tooltip" data-trigger="click" title="" data-original-title="Link copiado!">
+                                        <span class="redes-sociais">
+                                            <svg height="18pt" class="d-inline logo-instagram" viewBox="0 0 511 511.9" width="100%" xmlns="http://www.w3.org/2000/svg" id="logo-instagram"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"></path><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"></path><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"></path></svg>
+                                        </span>
+                                        <span class="visually-hidden">Instagram</span>
+                                    </a>
+
+                                    <a class="button-secondary copy-to-clip" href="https://api.whatsapp.com/send?text=Ouça o Podcast 'Saúde Parente' do curso de PCSSI: https://mooc.campusvirtual.fiocruz.br/rea/autocuidado/images/modulo1/aula1/topico3/fiocruz_20170206_comer_pra_que_00016.jpg" data-toggle="tooltip" data-trigger="click" title="" data-original-title="Link copiado!">
+                                        <span class="redes-sociais">
+                                            <svg height="18pt" class="d-inline logo-facebook" id="logo-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 155.139 155.139;" xml:space="preserve">
+                                                <path d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+                                                        c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+                                                        v20.341H37.29v27.585h23.814v70.761H89.584z"></path>
+
+                                            </svg>
+                                        </span>
+                                        <span class="visually-hidden">Facebook</span>
+                                    </a>
+
+                                    <a class="button-secondary copy-to-clip" href="https://api.whatsapp.com/send?text=Ouça o Podcast 'Saúde Parente' do curso de PCSSI: https://mooc.campusvirtual.fiocruz.br/rea/autocuidado/images/modulo1/aula1/topico3/fiocruz_20170206_comer_pra_que_00016.jpg" data-toggle="tooltip" data-trigger="click" title="" data-original-title="Link copiado!">
+                                        <span class="redes-sociais">
+                                            <svg  height="18pt" class="d-inline logo-facebook" id="logo-x" enable-background="new 0 0 1226.37 1226.37" viewBox="0 0 1226.37 1226.37" xmlns="http://www.w3.org/2000/svg"><path d="m727.348 519.284 446.727-519.284h-105.86l-387.893 450.887-309.809-450.887h-357.328l468.492 681.821-468.492 544.549h105.866l409.625-476.152 327.181 476.152h357.328l-485.863-707.086zm-144.998 168.544-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721h-162.604l-323.311-462.446z"></path></svg>
+                                        </span>
+                                        <span class="visually-hidden">X</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1496,22 +1480,14 @@
                                         luctus eros, quis
                                         lobortis odio. Morbi in massa quis lorem porttitor tempus.</p>
 
-                                    <div class="obj-lista">
-                                        <ul class="list-group">
-                                            <li class="list-group-item" list-style='audio'>
-                                                <a href='' target=''>Exemplo de link de áudio</a>
-                                            </li>
-                                            <li class="list-group-item" list-style='file'>
-                                                <a href='' target=''>Exemplo de link para arquivos</a>
-                                            </li>
-                                            <li class="list-group-item" list-style='pages'>
-                                                <a href='' target='_blank'>Exemplo de link para páginas</a>
-                                            </li>
-                                            <li class="list-group-item" list-style='video'>
-                                                <a href='' target=''>Exemplo de link de vídeo</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <div class="list">
+                                            <ul class="list-group">
+                                                <li class="list-group-item" list-style="video">Lista com bullet de vídeo.</li>
+                                                <li class="list-group-item" list-style="audio">Lista com bullet de audio.</li>
+                                                <li class="list-group-item" list-style="file">Lista com bullet de arquivo (PDF)</li>
+                                                <li class="list-group-item" list-style="page">Lista de bullet de página web</li>
+                                            </ul>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -1896,122 +1872,151 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
                 </div>
 
                 <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <!--Flip Cards 2.0 CSS -->
-                        <div class="row justify-content-center my-5">
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="flipcard">
+							<div class="row justify-content-center my-5">
+								<!--FlipCard 1-->
+								<div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h4 card-title">Título do card</span>
+														<p>Este card <strong>possui</strong> um texto rolável atrás</p>
+													</div>
 
-                            <!--FlipCard 1-->
-                            <div class="col-12 col-md-6 col-lg-6 mb-5 mb-lg-0">
-                                    <div class="flip-card">
-                                        <input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
-                                        <div class="flip-card-inner">
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard1" class="btn btn-outline-light" aria-hidden="true">
+																<img src="../images/recursos-visuais/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
 
-                                            <!-- FRENTE -->
-                                            <div class="card shadow flip-card-front fundo1">
-                                                <div class="card h-100 bg-transparent border-0">
-                                                    <div class="card-body justify-content-center d-flex flex-column m-0">
-                                                        <span class="h2 card-title">SIM,</span>
-                                                        <p class="card-text font-weight-normal">é primeira vez na sala
-                                                            de vacina</p>
-                                                    </div>
+											<!-- VERSO -->
+											<div class="card flip-card-back card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Inserir o conteúdo dentro de uma div com classe <em>scrollable</em></span>
+														<div class="scrollable">
+															<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.
+																Velit atque laudantium minus modi explicabo neque dolorum blanditiis eaque ratione tenetur ducimus voluptatibus, asperiores porro natus vitae, praesentium rem repellendus mollitia amet doloribus totam nisi est? Similique, magnam at?</p>
+															<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.
+																Velit atque laudantium minus modi explicabo neque dolorum blanditiis eaque ratione tenetur ducimus voluptatibus, asperiores porro natus vitae, praesentium rem repellendus mollitia amet doloribus totam nisi est? Similique, magnam at?</p>
+														</div>
+													</div>
 
-                                                    <div class="card-footer">
-                                                        <div class="card-btn">
-                                                            <label for="flipcard1" class="btn btn-outline-light"
-                                                                aria-hidden="true">
-                                                                <img src="../images/recursos-visuais/flipcard-icon.svg" width="36" alt="Ícone de card virando">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard1" class="btn btn-outline-light return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Fim Flipcard 1-->
 
-                                            <!-- VERSO -->
-                                            <div class="flip-card-back">
-                                                <div class="card h-100 bg-transparent border-0">
-                                                    <div class="card-body justify-content-center d-flex flex-column m-0 p-0">
-                                                        <p class="h5 card-title my-0">Verificar se existe registro no
-                                                            sistema.</p>
-                                                        <div class="card-text">
-                                                            <p>Se sim, <strong>atualizar o registro</strong>.</p>
-                                                            <p>Se não, <strong>preencher os dados dados cadastrais do
-                                                                    sistema</strong>.</p>
-                                                        </div>
-                                                    </div>
+								<!--FlipCard 2-->
+								<div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 item1 text-white card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h4 card-title">Título do card</span>
+														<p>Este card <strong>não possui</strong> um texto rolável atrás</p>
+													</div>
 
-                                                    <div class="card-footer">
-                                                        <div class="card-btn">
-                                                            <label for="flipcard1" class="btn btn-outline-light return"
-                                                                aria-hidden="true">
-                                                                <span class="material-symbols-rounded">arrow_back</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard2" class="btn btn-outline-light" aria-hidden="true">
+																<img src="../images/recursos-visuais/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
 
-                                        </div>
-                                    </div>
-                                
-                            </div>
-                            <!--Fim Flipcard 1-->
+											<!-- VERSO -->
+											<div class="card flip-card-back card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Não precisa colocar o conteúdo dentro da div com classe <em>scollable</em></span>
+														<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.</p>
+													</div>
 
-                            <!--FlipCard 2-->
-                            <div class="col-12 col-md-6 col-lg-6 mb-5 mb-lg-0"> 
-                                <div class="flip-card">
-                                    <input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
-                                    <div class="flip-card-inner">
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard2" class="btn btn-outline-light return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Fim Flipcard 2-->
 
-                                        <!-- FRENTE -->
-                                        <div class="card shadow flip-card-front fundo1">
-                                            <div class="card h-100 bg-transparent border-0">
-                                                <div class="card-body justify-content-center d-flex flex-column m-0">
-                                                    <span class="h2 card-title">NÃO,</span>
-                                                    <p class="card-text font-weight-normal">é primeira vez na sala
-                                                        de vacina</p>
-                                                </div>
+								<!--FlipCard 3-->
+								<div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard3" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 item1 text-white h-100 card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h4 card-title">Título do card</span>
+														<p>Este card <strong>não possui</strong> um texto rolável atrás</p>
+													</div>
 
-                                                <div class="card-footer text-white">
-                                                    <div class="card-btn">
-                                                        <label for="flipcard2" class="btn btn-outline-light"
-                                                            aria-hidden="true">
-                                                            <img src="../images/recursos-visuais/flipcard-icon.svg" width="36" alt="Ícone de card virando">
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard3" class="btn btn-outline-light" aria-hidden="true">
+																<img src="../images/recursos-visuais/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
 
-                                        <!-- VERSO -->
-                                        <div class="flip-card-back">
-                                            <div class="card h-100 bg-transparent border-0">
-                                                <div class="card-body justify-content-center d-flex flex-column m-0 p-0">
-                                                    <p class="h5 card-title my-0">Verificar se existe registro no
-                                                        sistema.</p>
-                                                    <div class="card-text">
-                                                        <p>Se sim, <strong>atualizar o registro</strong>.</p>
-                                                        <p>Se não, <strong>preencher os dados dados cadastrais do
-                                                                sistema</strong>.</p>
-                                                    </div>
-                                                </div>
+											<!-- VERSO -->
+											<div class="card flip-card-back card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Não precisa colocar o conteúdo dentro da div com classe <em>scollable</em></span>
+														<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.</p>
+													</div>
 
-                                                <div class="card-footer">
-                                                    <div class="card-btn">
-                                                        <label for="flipcard2" class="btn btn-outline-light return"
-                                                            aria-hidden="true">
-                                                            <span class="material-symbols-rounded">arrow_back</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard3" class="btn btn-outline-light return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Fim Flipcard 3-->
+							</div>
+						</div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Fim Flipcard 2-->
-                        </div>
-                        <!--Flip Cards 2.0 CSS -->
 
                     </div>
                 </div>
@@ -2275,83 +2280,95 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
         </section>
 
         <!-- Bloco - Lista -->
-        <section id="listas">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <!-- Heading Block (Título h2 ou h3 + Lead (se houver)) -->
-                        <div class="heading__block">
-                            <span class="heading__before">Recurso 11</span>
-                            <h3>Lista</h3>
-                            <p class="heading__lead">Na versão vertical, utilizada para exibir diferentes conteúdos em
-                                diferentes períodos de tempo</p>
-                        </div>
-                        <!-- Fim do Heading Block (Título h2 ou h3 + Lead (se houver)) -->ista sim
+        <section class="component--lista">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="heading__block">
+                        <span class="heading__before">Recurso #21</span>
+                        <h2 class="heading__title">Listas</h2>
+                    </div>
+                    <p>Na versão vertical, utilizada para exibir diferentes conteúdos em diferentes períodos de tempo.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3>Lista simples</h3>
+                </div>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="list">
+                        <ul class="list-group">
+                            <li class="list-group-item" list-style="default">Lista com bullet simples.</li>
+                            <li class="list-group-item" list-style="default">
+                                Lista com bullet simples.
+                                <ul class="list-group">
+                                    <li class="list-group-item sub-item">sub lista dentro de uma lista.</li>
+                                    <li class="list-group-item sub-item">sub lista dentro de uma lista.</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item" list-style="video">Lista com bullet de vídeo.</li>
+                            <li class="list-group-item" list-style="audio">Lista com bullet de audio.</li>
+                            <li class="list-group-item" list-style="file">Lista com bullet de arquivo (PDF)</li>
+                            <li class="list-group-item" list-style="page">Lista de bullet de página web</li>
+                            <li class="list-group-item" list-style="none">Lista sem bullet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h3>Lista ordenada</h3>
+                </div>
+
+                <div class="col-12 col-md-10 col-lg-4 mb-5">
+                    <div class="list">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">Lista numerada simples.</li>
+                            <li class="list-group-item">
+                                Lista numerada simples.
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item sub-item">Sub lista numerada simples.</li>
+                                    <li class="list-group-item sub-item">Sub lista numerada simples.</li>
+                                </ol>
+                            </li>
+                            <li class="list-group-item">Lista numerada simples.</li>
+                            <li class="list-group-item">Lista numerada simples.</li>
+                        </ol>
                     </div>
                 </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <p>Pode ser uma lista simples (não-ordenada) ou lista ordenada.</p>
-                        <p>Originalmente, para listas presentes no texto corrido estamos utilizando para tablets e
-                            desktops
-                            (largura igual ou maior que 768px) uma colunagem de 10 (col-md-10). Porém,
-                            <strong>dependendo da
-                                necessidade</strong>, será possível ajustar este tamanho.
-                        </p>
-                        <p>Um exemplo é quando tempos uma lista dentro de um modal. É possível utilizar 12 colunas ao
-                            invés
-                            de 10.</p>
+                <div class="col-12 col-md-10 col-lg-4 mb-5">
+                    <div class="list">
+                        <ol class="list-group list-group-numbered" number-style="a">
+                            <li class="list-group-item">Lista numerada alfabética.</li>
+                            <li class="list-group-item">
+                                Lista numerada alfabética.
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item sub-item">Sub lista numerada alfabética.</li>
+                                    <li class="list-group-item sub-item">Sub lista numerada alfabética.</li>
+                                </ol>
+                            </li>
+                            <li class="list-group-item">Lista numerada alfabética.</li>
+                            <li class="list-group-item">Lista numerada alfabética.</li>
+                        </ol>
                     </div>
                 </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <h4>Lista Simples</h4>
-
-                        <!-- Lista Simples -->
-                        <div class="obj-lista my-5">
-                            <ul class="list-group">
-                                <li class="list-group-item mb-3" list-style='default'>
-                                    Compreender o que são as vacinas e qual a sua importância em termos da saúde dos indivíduos e das populações.
-                                </li>
-                                <li class="list-group-item mb-3" list-style='default'>
-                                    Conhecer conceitos básicos relativos às vacinas e vacinação, como eficácia, segurança, efetividade e cobertura vacinal.
-                                </li>
-                                <li class="list-group-item mb-3" list-style='default'>
-                                    Conhecer o Programa Nacional de Imunizações do Brasil, sua trajetória e relevância
-                                </li>
-                                <li class="list-group-item mb-3" list-style='default'>
-                                    Analisar os principais desafios colocados às políticas nacionais de imunização no cenário atual.
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Fim de Lista Simples -->
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <h4>Lista Ordenada</h4>
-
-                        <!-- Lista Ordenada -->
-                        <div class="obj-lista my-5">
-                            <ol class="list-group">
-                                <li class="list-group-item mb-3">
-                                    Compreender o que são as vacinas e qual a sua importância em termos da
-                                    saúde dos indivíduos e das populações.</li>
-                                <li class="list-group-item mb-3">Conhecer
-                                    conceitos básicos relativos às vacinas e vacinação, como eficácia,
-                                    segurança, efetividade e cobertura vacinal. </li>
-                                <li class="list-group-item">Conhecer o
-                                    Programa Nacional de Imunizações do Brasil, sua trajetória e relevância.
-                                </li>
-                                <li class="list-group-item mb-3">Analisar
-                                    os principais desafios colocados às políticas nacionais de imunização no
-                                    cenário atual. </li>
-                            </ol>
-                        </div>
-                        <!-- Fim de Lista Ordenada -->
+                <div class="col-12 col-md-10 col-lg-4">
+                    <div class="list">
+                        <ol class="list-group list-group-numbered" number-style="I">
+                            <li class="list-group-item">Lista numerada romana.</li>
+                            <li class="list-group-item">
+                                Lista numerada romana.
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item sub-item">Sub lista numerada romana.</li>
+                                    <li class="list-group-item sub-item">Sub lista numerada romana.</li>
+                                </ol>
+                            </li>
+                            <li class="list-group-item">Lista numerada romana.</li>
+                            <li class="list-group-item">Lista numerada romana.</li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -2550,501 +2567,198 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
             </div>
         </section>
 
-        <!-- Bloco - Slider -->
-        <section id="sliders">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <!-- Heading Block (Título h2 ou h3 + Lead (se houver)) -->
-                        <div class="heading__block">
-                            <span class="heading__before">Recurso 15</span>
-                            <h3>Slider</h3>
-                            <p class="heading__lead">Utilizado para exibir diferentes conteúdos (imagem ou texto) por
-                                partes.</p>
-                        </div>
-                        <!-- Fim do Heading Block (Título h2 ou h3 + Lead (se houver)) -->
+        <section class="component--slider">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="heading__block">
+                        <span class="heading__before">Recurso #16</span>
+                        <h2 class="heading__title">Slider</h2>
                     </div>
+                    <p>Utilizado para exibir diferentes conteúdos (imagem ou texto) por partes. <strong>Uso preferencial para IMAGENS</strong>.</p>
                 </div>
+            </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <p><strong>Obs:</strong> Para os sliders com imagens, <strong>atenção ao caminho destas
-                                imagens!</strong> Coloque o endereço certo de onde elas estão hospedadas na página.</p>
-                        <br />
-                        <p class="mb-5"><strong>Obs 2:</strong> Caso necessite dar mais destaque às setas, insira a classe <strong>bg-white</strong> junto à tag span com as classes <em>carousel-control-prev-icon</em> e <em>carousel-control-next-icon</em>  </p>
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3>Slider imagem horizontal e texto</h3>
 
-                        <h4>Slider imagem horizontal e texto</h4>
-
-                        <!--Slider com imagem -->
-                        <div id="carousel3" class="carousel slide" data-ride="false" data-interval="false"
-                            data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
-                            <div class="card shadow border-0 m-0 p-0">
-                                <div class="row justify-content-center pb-5">
-                                    <div class="col-12 col-md-12 col-lg-12">
-                                    
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carousel3" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel3" data-slide-to="1"></li>
-                                            <li data-target="#carousel3" data-slide-to="2"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-
-                                            <!-- Ítem 1 -->
-                                            <article class="carousel-item active">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-12 p-0">
-                                                        <img class="img-fluid rounded-top d-none d-md-block"
-                                                            src="https://source.unsplash.com/random/1280x480?mountain"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 1280x480">
-                                                        <img class="img-fluid rounded-top d-block d-md-none"
-                                                            src="https://source.unsplash.com/random/600x450?mountain"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 600x450">
-                                                    </div>
-                                                    <div class="col-10 col-lg-12">
-                                                        <div class="row justify-content-center py-5">
-                                                            <div class="col-12 col-lg-10">
-                                                                <div class="slider-body">
-                                                                    <span class='h5 mb-4'>Passo 1</span>
-                                                                    <p>Para criar novas Pastas, primeiramente, devemos selecionar, clicando sobre ela, uma Pasta ou unidade de disco (partição) no Painel de Pastas (lado esquerdo da janela).</p>
-                                                                    <p>Para criar novas Pastas, primeiramente, devemos selecionar, clicando sobre ela, uma Pasta ou unidade de disco (partição) no Painel de Pastas (lado esquerdo da janela).</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Ítem 2 -->
-                                            <article class="carousel-item">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-12 p-0">
-                                                        <img class="img-fluid rounded-top d-none d-md-block"
-                                                            src="https://source.unsplash.com/random/1280x480?ocean"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 1280x480">
-                                                        <img class="img-fluid rounded-top d-block d-md-none"
-                                                            src="https://source.unsplash.com/random/600x450?ocean"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 600x450">
-                                                    </div>
-                                                    <div class="col-10 col-lg-12">
-                                                        <div class="row justify-content-center py-5">
-                                                            <div class="col-12 col-lg-10">
-                                                                <div class="slider-body">
-                                                                    <span class='h5 mb-4'>Passo 2</span>
-                                                                    <p>Quando criada, a pasta nova terá um nome que é temporário, e que te dá possibilidade de mudar o nome. Para renomear uma pasta ou arquivo, você precisa selecionar a pasta/arquivo que deseja e realizar o procedimento.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Ítem 3 -->
-                                            <article class="carousel-item">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-12 p-0">
-                                                        <img class="img-fluid rounded-top d-none d-md-block"
-                                                            src="https://source.unsplash.com/random/1280x480?forest"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 1280x480">
-                                                        <img class="img-fluid rounded-top d-block d-md-none"
-                                                            src="https://source.unsplash.com/random/600x450?forest"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 600x450">
-                                                    </div>
-                                                    <div class="col-10 col-lg-12">
-                                                        <div class="row justify-content-center py-5">
-                                                            <div class="col-12 col-lg-10">
-                                                                <div class="slider-body">
-                                                                    <span class='h5 mb-4'>Passo 3</span>
-                                                                    <p>Após isso, você pode mover seus arquivos para as pastas que deseja. Por exemplo, digamos que você tenha alguns arquivos pessoais. Não seria legal deixá-los na área de trabalho jogados e soltos. Você pode criar uma pasta chamada “arquivos pessoais” e colocar todos os arquivos lá dentro.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-
-                                        <!-- Controles -->
-                                        <a class="carousel-control-prev" href="#carousel3" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon dark-arrow ml-2"
-                                                aria-hidden="true"></span>
-                                            <span class="sr-only">Anterior</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carousel3" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon dark-arrow mr-2"
-                                                aria-hidden="true"></span>
-
-                                            <span class="sr-only">Próximo</span>
-                                        </a>
-                                    </div>
+                    <div class="slider">
+                        <div class="card">
+                            <div id="carousel-regular" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-regular" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-regular" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel-regular" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
-                                <!--Fim do caroussel inner-->
-                            </div>
-                        </div>
-                        <!--Fim do Slider-->
-                    </div>
-                </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <h4>Slider somente texto:</h4>
-
-                        <!--Slider-->
-                        <div id="carousel2" class="carousel slide" data-ride="false" data-interval="false"
-                            data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
-                            <div class="card shadow border-0 p-2 pb-4">
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-12 col-lg-12 justify-content-center d-flex flex-column carousel-texto">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel2" data-slide-to="1"></li>
-                                            <li data-target="#carousel2" data-slide-to="2"></li>
-                                        </ol>
-
-                                        <div class="carousel-inner p-4">
-                                            <!-- Ítem 1 -->
-                                            <article class="carousel-item active">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-11 col-md-10">
-                                                        <p>A primeira iniciativa de fomento para abertura de dados
-                                                            governamentais se deu a partir do
-                                                            <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/dsn/dsn13117.htm"
-                                                                target="_blank">Plano de Ação Nacional sobre Governo
-                                                                Aberto</a>
-                                                            (Decreto s/nº de 15 de
-                                                            setembro de 2011), criado para incremento da transparência e do
-                                                            acesso à informação pública.
-                                                            As medidas estavam respaldadas na Constituição Federal, a qual
-                                                            estabelece que a
-                                                            administração pública tem a responsabilidade de fazer a gestão
-                                                            da
-                                                            documentação governamental
-                                                            e viabilizar o acesso dos usuários a registros administrativos e
-                                                            a
-                                                            informações sobre atos de
-                                                            governo.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Ítem 2 -->
-                                            <article class="carousel-item">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-11 col-md-10">
-                                                        <p>O movimento de abertura ganha institucionalidade com a <a
-                                                                href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm"
-                                                                target="_blank">Lei de Acesso à Informação</a> (LAI -
-                                                            12.527/2011), responsável pela
-                                                            criação de uma cultura de transparência no governo federal.
-                                                            Preconizou o direito
-                                                            constitucional de qualquer pessoa ter acesso à informação
-                                                            pública e
-                                                            a obrigação de dar
-                                                            publicidade sobre o recebimento e a destinação dos recursos
-                                                            públicos
-                                                            pelos três poderes da
-                                                            União; estados, Distrito Federal, municípios; tribunais de
-                                                            conta;
-                                                            Ministério Público; e
-                                                            entidades privadas sem fins lucrativos.</p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Ítem 3 -->
-                                            <article class="carousel-item">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-11 col-md-10">
-                                                        <p>O movimento do Governo Aberto impulsionou a criação da <a
-                                                                href="https://www.governodigital.gov.br/transformacao/cidadania/dados-abertos/inda-infraestrutura-nacional-de-dados-abertos"
-                                                                target="_blank">Infraestrutura Nacional de Dados Abertos
-                                                                (INDA)</a> que visa promover a
-                                                            publicação de dados abertos pelos órgãos e entidades públicos de
-                                                            forma padronizada e
-                                                            centralizada. Trata-se, portanto, de um conjunto de padrões,
-                                                            tecnologias, procedimentos e
-                                                            mecanismos de controle para atendimento das condições de
-                                                            disseminação e compartilhamento de
-                                                            dados públicos de forma aberta.</p>
-                                                    </div>
-                                                </div>
-                                            </article>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card-thumb">
+                                            <img src="https://placehold.co/1280x720" alt="" />
                                         </div>
-
-                                        <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-                                            <span class="carousel-control-prev-icon dark-arrow" aria-hidden="true"></span>
-                                            <span class="sr-only">Anterior</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-                                            <span class="carousel-control-next-icon dark-arrow" aria-hidden="true"></span>
-
-                                            <span class="sr-only">Próximo</span>
-                                        </a>
-                                    </div>
-                                    <!--Fim do caroussel inner-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fim do Slider-->
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <h4>Slider somente imagens:</h4>
-
-                        <!--Slider somente imagem -->
-                        <div id="carousel1" class="carousel slide" data-ride="false" data-interval="false"
-                            data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
-                            <div class="row justify-content-center m-0">
-                                <div class="col-12 col-md-12 col-lg-12 px-0">
-                                    <div class="card shadow border-0 col-12 m-0 p-0">
-                                        <ol class="carousel-indicators somente-img">
-                                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel1" data-slide-to="1"></li>
-                                            <li data-target="#carousel1" data-slide-to="2"></li>
-                                        </ol>
-
-                                        <div class="carousel-inner">
-                                            <!-- Ítem 1 -->
-                                            <article class="carousel-item active">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-12 p-0">
-                                                        <img class="img-fluid rounded d-none d-md-block"
-                                                            src="https://source.unsplash.com/random/1280x640?trees"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 1280x640">
-                                                        <img class="img-fluid rounded d-block d-md-none"
-                                                            src="https://source.unsplash.com/random/640x480?trees"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 640x480">
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Ítem 2 -->
-                                            <article class="carousel-item">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-12 p-0">
-                                                        <img class="img-fluid rounded d-none d-md-block"
-                                                            src="https://source.unsplash.com/random/1280x640?rocks"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 1280x640">
-                                                        <img class="img-fluid rounded d-block d-md-none"
-                                                            src="https://source.unsplash.com/random/640x480?trees"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 640x480">
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Ítem 3 -->
-                                            <article class="carousel-item">
-                                                <div class="row justify-content-center m-0">
-                                                    <div class="col-12 p-0">
-                                                        <img class="img-fluid rounded d-none d-md-block"
-                                                            src="https://source.unsplash.com/random/1280x640?desert"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 1280x640">
-                                                        <img class="img-fluid rounded d-block d-md-none"
-                                                            src="https://source.unsplash.com/random/640x480?trees"
-                                                            alt="Descreva a imagem. Até 125 caracteres"
-                                                            title="Fonte: unsplash.com / 640x480">
-                                                    </div>
-                                            </article>
+                                        <div class="card-header">
+                                            <span class="">Slider 1</span>
                                         </div>
-
-                                        <!-- Controles -->
-                                        <a class="carousel-control-prev" href="#carousel1" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon white-arrow"
-                                                aria-hidden="true"></span>
-                                            <span class="sr-only">Anterior</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carousel1" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon white-arrow"
-                                                aria-hidden="true"></span>
-
-                                            <span class="sr-only">Próximo</span>
-                                        </a>
+                                        <div class="card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloremque delectus dicta labore? Eaque error maxime voluptatum cumque repudiandae corrupti quibusdam necessitatibus maiores possimus, facilis voluptates architecto totam? Atque, maxime.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <!--Fim do caroussel inner-->
-                            </div>
-                        </div>
-                        <!--Fim do Slider-->
-                    </div>
-                </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="col-11 col-md-10 col-lg-8">
-                        <h4>Slider de texto com imagem fixa:</h4>
-
-                        <!-- Slider com imagem única e texto -->
-                        <div class="row justify-content-center">
-                            <!-- Cardbox 1 -->
-                            <div class="col-12 col-md-10 col-lg-12">
-                                <div class="card-destaque card rounded border-0 shadow h-100">
-                                    <div class="card-header p-0">
-                                        <img src="https://via.placeholder.com/1280x640/8a6580/ffffff/?text=IMAGE 1280x640" alt="Descrição da imagem" title="Fonte: placeholder.com" class="rounded-top img-fluid" />
-                                    </div>
-                                    <div class="card-body px-0">
-                                        <div id="carousel-texto-imagem-fixa" class="carousel slide" data-ride="false" data-interval="false" data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
-                                            <div class="row justify-content-center">
-                                                <div class="col-12 col-md-12 col-lg-12 justify-content-center d-flex flex-column carousel-texto">
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#carousel-texto-imagem-fixa" data-slide-to="0" class="active"></li>
-                                                        <li data-target="#carousel-texto-imagem-fixa" data-slide-to="1"></li>
-                                                        <li data-target="#carousel-texto-imagem-fixa" data-slide-to="2"></li>
-                                                    </ol>
-
-                                                    <div class="carousel-inner p-4 mb-4">
-                                                        <!-- Ítem 1 -->
-                                                        <article class="carousel-item active">
-                                                            <div class="row justify-content-center m-0">
-                                                                <div class="col-11 col-md-11">
-                                                                    <p>
-                                                                        A <strong>Corregedoria Geral do Ministério da Saúde</strong>, criada em 2014, possui competência em todo o território nacional, apurando as denúncias relativas aos princípios constitucionais do SUS. Em 2018, foi lançado o Sistema de Procedimento Administrativo Disciplinar (SISPAD), gerenciando os processos correcionais e monitorando os prazos e o histórico de procedimentos disciplinares. Nesse âmbito, realiza a análise técnica das denúncias, disponibiliza apoio logístico-técnico para Comissões Disciplinares e Sindicais, além de dialogar com as Unidades Federais e a Corregedoria-Geral. Os Estados e Municípios possuem as suas respectivas corregedorias vinculadas às Secretarias de Saúde e disponibilizam canais de comunicação. Os funcionários públicos, em geral, conhecem as corregedorias e sabem acessá-las; desse modo, trabalhadores(as) da área de saúde podem acessá-las para denunciar casos de discriminação
-                                                                        de usuários nos serviços.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-
-                                                        <!-- Ítem 2 -->
-                                                        <article class="carousel-item">
-                                                            <div class="row justify-content-center m-0">
-                                                                <div class="col-11 col-md-11">
-                                                                    <p>Por sua vez, as denúncias dos cidadãos relativas ao SUS podem ser realizadas a partir das <strong>Ouvidorias</strong>. Na esfera Federal, ela ocorre através da “Plataforma Integrada de Ouvidoria e Acesso à Informação” (Fala.BR) e as denúncias são encaminhadas para averiguação. Na Plataforma há a opção “Denúncia” e o(a) cidadão(ã) tem três opções de login: Fala.Br; gov.br; não identificado (forma anônima). Na opção “Órgão para o qual você quer enviar sua manifestação” a pessoa deve escolher “MS – Ministério da Saúde” para as denúncias ocorridas no SUS. Logo abaixo há opções de assuntos e espaço para a descrição da denúncia (podendo anexar arquivos). A pessoa pode indicar o local onde ocorreu a discriminação e o nome do/as envolvido/as.</p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-
-                                                        <!-- Ítem 3 -->
-                                                        <article class="carousel-item">
-                                                            <div class="row justify-content-center m-0">
-                                                                <div class="col-11 col-md-11">
-                                                                    <p>Além da Plataforma, os usuários podem fazer denúncias pelo <strong>Disque Saúde</strong> (ligando para o número 136), tentar um atendimento presencial em Brasília no endereço disponibilizado no site <a href="https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvidoria-do-sus" target="_blank" rel="noopener noreferrer">https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvidoria-do-sus</a>, ou entrar em contato direto com a Ouvidoria do respectivo Estado. Muitos municípios possuem Ouvidorias nas Secretarias de Saúde, mas se houver uma ouvidoria específica da saúde na cidade, o Ministério da Saúde disponibiliza um “Guia de Orientações Básicas para Ouvidorias do SUS” e Cursos de Capacitação.</p>
-                                                                    <p>Há também o <strong>Disque 100</strong> para as denúncias de situações de discriminação incluindo os agravos do Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis (DCCI )</p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-
-                                                    <a class="carousel-control-prev" href="#carousel-texto-imagem-fixa" role="button" data-slide="prev">
-                                                        <span class="carousel-control-prev-icon dark-arrow" aria-hidden="true"></span>
-                                                        <span class="sr-only">Anterior</span>
-                                                    </a>
-                                                    <a class="carousel-control-next" href="#carousel-texto-imagem-fixa" role="button" data-slide="next">
-                                                        <span class="carousel-control-next-icon dark-arrow" aria-hidden="true"></span>
-
-                                                        <span class="sr-only">Próximo</span>
-                                                    </a>
-                                                </div>
-                                                <!--Fim do caroussel inner-->
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <div class="card-thumb">
+                                                <img src="https://placehold.co/1280x720" alt="" />
+                                            </div>
+                                            <div class="card-header">
+                                                <span class="">Slider 2</span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="card-footer">
-                                        <p class="small text-muted">Fonte: freepik.com</p>
-                                    </div> -->
                                 </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-regular" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon white-arrow" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-regular" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon white-arrow" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <!-- Fim do Cardbox 1 -->
                         </div>
-                        <!-- Fim do Slider com texto e imagem -->
-                    </div>
-                </div>
-
-                <div class="row justify-content-center mb-5">
-                    <div class="col-11 col-md-10 col-lg-8">
-                        <h4>Slider de texto com título fixo:</h4>
-
-                        <!-- Slider com título único e texto -->
-                        <div class="row justify-content-center">
-                            <!-- Cardbox 1 -->
-                            <div class="col-12 col-md-10 col-lg-12">
-                                <div class="card-destaque card rounded border-0 shadow h-100">
-                                    <div class="card-header p-4">
-                                        <span class='h4 mb-0'>Título único do caroussel</span>
-                                    </div>
-                                    <div class="card-body px-0">
-                                        <div id="carousel-texto-titulo-fixo" class="carousel slide" data-ride="false" data-interval="false" data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
-                                            <div class="row justify-content-center">
-                                                <div class="col-12 col-md-12 col-lg-12 justify-content-center d-flex flex-column carousel-texto">
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#carousel-texto-titulo-fixo" data-slide-to="0" class="active"></li>
-                                                        <li data-target="#carousel-texto-titulo-fixo" data-slide-to="1"></li>
-                                                        <li data-target="#carousel-texto-titulo-fixo" data-slide-to="2"></li>
-                                                    </ol>
-
-                                                    <div class="carousel-inner p-4 mb-4">
-                                                        <!-- Ítem 1 -->
-                                                        <article class="carousel-item active">
-                                                            <div class="row justify-content-center m-0">
-                                                                <div class="col-11 col-md-11">
-                                                                    <p>
-                                                                        A <strong>Corregedoria Geral do Ministério da Saúde</strong>, criada em 2014, possui competência em todo o território nacional, apurando as denúncias relativas aos princípios constitucionais do SUS. Em 2018, foi lançado o Sistema de Procedimento Administrativo Disciplinar (SISPAD), gerenciando os processos correcionais e monitorando os prazos e o histórico de procedimentos disciplinares. Nesse âmbito, realiza a análise técnica das denúncias, disponibiliza apoio logístico-técnico para Comissões Disciplinares e Sindicais, além de dialogar com as Unidades Federais e a Corregedoria-Geral. Os Estados e Municípios possuem as suas respectivas corregedorias vinculadas às Secretarias de Saúde e disponibilizam canais de comunicação. Os funcionários públicos, em geral, conhecem as corregedorias e sabem acessá-las; desse modo, trabalhadores(as) da área de saúde podem acessá-las para denunciar casos de discriminação
-                                                                        de usuários nos serviços.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-
-                                                        <!-- Ítem 2 -->
-                                                        <article class="carousel-item">
-                                                            <div class="row justify-content-center m-0">
-                                                                <div class="col-11 col-md-11">
-                                                                    <p>Por sua vez, as denúncias dos cidadãos relativas ao SUS podem ser realizadas a partir das <strong>Ouvidorias</strong>. Na esfera Federal, ela ocorre através da “Plataforma Integrada de Ouvidoria e Acesso à Informação” (Fala.BR) e as denúncias são encaminhadas para averiguação. Na Plataforma há a opção “Denúncia” e o(a) cidadão(ã) tem três opções de login: Fala.Br; gov.br; não identificado (forma anônima). Na opção “Órgão para o qual você quer enviar sua manifestação” a pessoa deve escolher “MS – Ministério da Saúde” para as denúncias ocorridas no SUS. Logo abaixo há opções de assuntos e espaço para a descrição da denúncia (podendo anexar arquivos). A pessoa pode indicar o local onde ocorreu a discriminação e o nome do/as envolvido/as.</p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-
-                                                        <!-- Ítem 3 -->
-                                                        <article class="carousel-item">
-                                                            <div class="row justify-content-center m-0">
-                                                                <div class="col-11 col-md-11">
-                                                                    <p>Além da Plataforma, os usuários podem fazer denúncias pelo <strong>Disque Saúde</strong> (ligando para o número 136), tentar um atendimento presencial em Brasília no endereço disponibilizado no site <a href="https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvidoria-do-sus" target="_blank" rel="noopener noreferrer">https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvidoria-do-sus</a>, ou entrar em contato direto com a Ouvidoria do respectivo Estado. Muitos municípios possuem Ouvidorias nas Secretarias de Saúde, mas se houver uma ouvidoria específica da saúde na cidade, o Ministério da Saúde disponibiliza um “Guia de Orientações Básicas para Ouvidorias do SUS” e Cursos de Capacitação.</p>
-                                                                    <p>Há também o <strong>Disque 100</strong> para as denúncias de situações de discriminação incluindo os agravos do Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis (DCCI )</p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-
-                                                    <a class="carousel-control-prev" href="#carousel-texto-titulo-fixo" role="button" data-slide="prev">
-                                                        <span class="carousel-control-prev-icon dark-arrow" aria-hidden="true"></span>
-                                                        <span class="sr-only">Anterior</span>
-                                                    </a>
-                                                    <a class="carousel-control-next" href="#carousel-texto-titulo-fixo" role="button" data-slide="next">
-                                                        <span class="carousel-control-next-icon dark-arrow" aria-hidden="true"></span>
-
-                                                        <span class="sr-only">Próximo</span>
-                                                    </a>
-                                                </div>
-                                                <!--Fim do caroussel inner-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="card-footer">
-                                        <p class="small text-muted">Fonte: freepik.com</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <!-- Fim do Cardbox 1 -->
-                        </div>
-                        <!-- Fim do Slider com título único e texto -->
                     </div>
                 </div>
             </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3>Slider de texto com imagem fixa:</h3>
+
+                    <div class="slider">
+                        <div class="card">
+                            <div class="card-thumb">
+                                <img class="img-fluid" src="https://placehold.co/1280x720" alt="" />
+                            </div>
+                            <div class="card-body">
+                                <div id="carousel-fixed-image" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-fixed-image" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-fixed-image" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-fixed-image" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus nisl, dapibus et luctus ac, bibendum ut sapien. Pellentesque at mi a lectus viverra molestie. Fusce tincidunt aliquam mauris ac venenatis. Nunc efficitur porttitor iaculis. Sed sed est eu felis tincidunt suscipit in at mauris. Fusce gravida mauris vel augue dapibus luctus. Morbi facilisis facilisis velit quis volutpat. Nam vestibulum leo non orci porttitor, nec semper eros pulvinar. Integer bibendum at nibh vel dignissim. Nullam vestibulum et eros nec iaculis. Morbi mattis nisi dolor, sed commodo tortor congue sed. Sed finibus bibendum nibh, non volutpat libero dapibus in. Nunc venenatis ac justo ac commodo. Pellentesque dictum metus sed arcu dictum interdum. Ut ornare aliquet quam sed rutrum. Nunc sit amet scelerisque mauris.</p>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <p>Phasellus fermentum facilisis mollis. Nam et turpis arcu. Ut rhoncus augue vel consequat sodales. In hendrerit posuere nisi, eget consequat velit ullamcorper nec. Praesent eu quam eget libero cursus iaculis quis eget purus.</p>
+
+                                        </div>
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-fixed-image" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon white-arrow" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-fixed-image" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon white-arrow" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3>Slider somente imagem:</h3>
+
+                    <div class="slider">
+                        <div class="card">
+                            <div class="card-thumb">
+                                <div id="carousel-image-only" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-image-only" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-image-only" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-image-only" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://placehold.co/1280x720" alt="" />
+                                        </div>
+
+                                        <div class="carousel-item ">
+                                            <img src="https://placehold.co/1280x720" alt="" />
+                                        </div>
+
+                                        <div class="carousel-item ">
+                                            <img src="https://placehold.co/1280x720" alt="" />
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-image-only" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon white-arrow" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-image-only" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon white-arrow" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3>Slider de texto com título fixo:</h3>
+
+                    <div class="slider">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="">Título do Slider</span>
+                            </div>
+                            <div class="card-body">
+                                <div id="carousel-fixed-text" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-fixed-text" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-fixed-text" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-fixed-text" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus nisl, dapibus et luctus ac, bibendum ut sapien. Pellentesque at mi a lectus viverra molestie. Fusce tincidunt aliquam mauris ac venenatis. Nunc efficitur porttitor iaculis. Sed sed est eu felis tincidunt suscipit in at mauris. Fusce gravida mauris vel augue dapibus luctus. Morbi facilisis facilisis velit quis volutpat. Nam vestibulum leo non orci porttitor, nec semper eros pulvinar. Integer bibendum at nibh vel dignissim. Nullam vestibulum et eros nec iaculis. Morbi mattis nisi dolor, sed commodo tortor congue sed. Sed finibus bibendum nibh, non volutpat libero dapibus in. Nunc venenatis ac justo ac commodo. Pellentesque dictum metus sed arcu dictum interdum. Ut ornare aliquet quam sed rutrum. Nunc sit amet scelerisque mauris.</p>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <p>Phasellus fermentum facilisis mollis. Nam et turpis arcu. Ut rhoncus augue vel consequat sodales. In hendrerit posuere nisi, eget consequat velit ullamcorper nec. Praesent eu quam eget libero cursus iaculis quis eget purus.</p>
+
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-fixed-text" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon white-arrow" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-fixed-text" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon white-arrow" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -4007,13 +3721,20 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
 	============================================= -->
 
     <!-- Bootstrap Bundle (com Popper) e JQuery 3.5.1 -->
-    <script type="text/javascript" src="../bootstrap-4.6.2-dist/js/jquery-3.5.1.slim.min.js"></script>
-    <script type="text/javascript" src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="../bootstrap-4.6.2-dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap JS -->
+		<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
 
     <!-- Other scripts -->
     <script type="text/javascript" src="../js/scripts.js"></script>
 	<script type="text/javascript" src="../js/anime.min.js"></script>
 	<script type="text/javascript" src="../js/custom-anime.js"></script>
+    <script type="text/javascript" src="../animate/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
     <!-- <script src="../js/jquery.js"></script> -->
     <!-- <script src="../js/plugins.min.js"></script> -->

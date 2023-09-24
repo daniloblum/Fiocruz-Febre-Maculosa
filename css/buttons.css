@@ -1,45 +1,54 @@
 /* Buttons */
 
 .button-primary {
+    font-family: var(--fio-sys-button-font-family);
     display:inline-block;
-    padding: 8px 16px;
+    padding: var(--fio-sys-spacing-padding-sm) var(--fio-sys-spacing-padding-md);
     min-width: 120px;
     text-align: center;
-    border-radius: 4px;
-    background-color: var(--primary-color);
+    border-radius: var(--fio-sys-spacing-border-radius-md);
+    background-color: var(--fio-sys-secondary-color);
     color: #ffffff !important;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--fio-sys-secondary-color);
     text-decoration: none;
 }
 .button-primary:hover {
-    background-color: var(--primary-color-light);
+    background-color: var(--fio-sys-secondary-color-light);
     color: #ffffff;
-    border: 1px solid var(--primary-color-light);
+    border: 1px solid var(--fio-sys-secondary-color-light);
     text-decoration: none;
 }
 
-.button-primary:focus {
-    text-decoration: none;
-}
 
 .button-secondary {
+    font-family: var(--fio-sys-button-font-family);
     display:inline-block;
     padding: 8px 16px;
     min-width: 120px;
     text-align: center;
     border-radius: 4px;
-    background-color: none;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    background-color: var(--fio-sys-secondary-color);
+    color: #ffffff !important;
+    border: 1px solid var(--fio-sys-secondary-color);
     text-decoration: none;
 }
 .button-secondary:hover {
-    background-color: var(--primary-color-light);
+    background-color: var(--fio-sys-secondary-color-light);
     color: #ffffff;
-    border: 1px solid var(--primary-color-light);
+    border: 1px solid var(--fio-sys-secondary-color-light);
     text-decoration: none;
 }
 
 .button-secondary:focus {
     text-decoration: none;
+}
+
+
+/* Botões para compartilhamento redes sociais */
+.button-secondary span.redes-sociais svg{
+    fill:#fff;
+}
+
+.button-secondary span.redes-sociais {
+    display: inline-block;
 }

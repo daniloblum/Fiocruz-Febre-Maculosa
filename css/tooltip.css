@@ -5,11 +5,11 @@
 
 /* On HTML */
 .tooltip-text {
-	color: var(--primary-color);
+	color: var(--fio-sys-secondary-color);
 	font-family: 'Open Sans Regular', sans-serif;
 }
 
 .tooltip-text:hover {
-	color: var(--primary-color-light);
+	color: var(--fio-sys-secondary-color-light);
 	text-decoration: underline;
 }
