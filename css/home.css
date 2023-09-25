@@ -34,7 +34,7 @@ header,
 #header-title h1 {
 	font-family: var(--fio-ref-typography-family-secondary-regular);
 	color: var(--fio-sys-text-color-white);
-	font-size: var(--fio-ref-size-175);
+	font-size: var(--fio-ref-size-150);
 	text-align: center;
 	text-shadow: var(--fio-sys-text-shadow-header);
 	margin: 0 auto;
@@ -44,7 +44,7 @@ header,
 #header-title h1 span {
 	font-family: var(--fio-ref-typography-family-primary-bold);
 	/* font-size: 11vw; */
-	font-size: var(--fio-ref-size-500);
+	font-size: var(--fio-ref-size-300);
 	line-height: 1;
 	margin-bottom: 10px;
 }
@@ -96,24 +96,6 @@ header,
 	background-repeat: no-repeat;
 } */
 
-@media (min-width: 768px) {
-	/* #header-title h1 span {
-		font-size: 8vw;
-	}
-	#header-title h1 {
-		font-size: 40px;
-	} */
-}
-
-@media (min-width: 992px) {
-	/* #header-title h1 span {
-		font-size: 54px;
-	}
-	#header-title h1 {
-		font-size: 40px;
-	} */
-}
-
 .main {
 	background: var(--fio-background-neutral-color);
 	z-index: 10;
@@ -150,7 +132,7 @@ header,
 	height: 100%;
 	/* border: 1px solid var(--fio-sys-primary-color); */
 	box-shadow: 0 8px 16px rgba(200, 200, 200, 1);
-	padding: var(--fio-sys-spacing-padding-lg);
+	padding: var(--fio-sys-spacing-padding-md);
 }
 
 #course-program .card .card-header {
@@ -252,4 +234,35 @@ footer {
 
 footer .container {
 	border-top: 1px solid var(--fio-sys-tertiary-color-dark);
+}
+
+@media (min-width: 768px) {
+	/* #header-title h1 span {
+		font-size: 8vw;
+	}
+	#header-title h1 {
+		font-size: 40px;
+	} */
+}
+
+@media (min-width: 992px) {
+	/* /* #header-title h1 span {
+		font-size: 54px;
+	} */
+	
+	#header-title h1 span {
+		font-size: var(--fio-ref-size-500);
+	}
+
+	#header-title h1 {
+		font-size: var(--fio-ref-size-175);
+	}
+
+	/*#header-title h1 {
+		font-size: 40px;
+	} */
+
+	#course-program .card {
+		padding: var(--fio-sys-spacing-padding-lg);
+	}
 }

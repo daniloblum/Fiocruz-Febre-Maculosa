@@ -35,7 +35,7 @@
 }
 
 .sidebar__header {
-	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-md);
+	padding: 0 var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-md);
 }
 
 .sidebar__header h1 {
@@ -164,7 +164,7 @@
 }
 
 .sidebar__section img {
-	padding: 0 20px;
+	padding: 0;
 }
 
 .content {

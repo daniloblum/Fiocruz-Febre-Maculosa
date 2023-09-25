@@ -27,9 +27,9 @@
 	}
 })();
 
-// // MOBILE
+// MOBILE
 
-var sidebarBtn = $('#sidebar-toggle');
+var sidebarBtn = document.getElementByID('sidebar-toggle');
 var content = $('.content');
 var sidebarMobile = $('.sidebar');
 var btn = $('.btn');
