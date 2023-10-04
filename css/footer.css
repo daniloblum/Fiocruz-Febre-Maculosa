@@ -34,7 +34,7 @@ footer img {
 }
 footer .logos.principais {
 	padding: 20px;
-	border-top: 1px solid var(--fio-sys-primary-color);
+	/* border-top: 1px solid var(--fio-sys-primary-color); */
 	display: flex;
 	column-gap: 20px;
 	align-items: end;
@@ -52,12 +52,15 @@ footer .logos img {
 		max-height: 120px;
 	}
 }
+
 @media (min-width: 992px) {
 	footer .logos {
 		padding: 0 30px 30px;
 		column-gap: 60px;
 	}
+	
 }
+
 @media (min-width: 1200px) {
 	footer .linha-de-marcas {
 		max-width: 1440px;
@@ -66,11 +69,13 @@ footer .logos img {
 	footer .logos {
 		padding: 0 20px;
 		column-gap: 40px;
+		justify-content: end;
 	}
 	footer .logos.principais {
 		padding: 0 20px;
 		border: none;
-		border-left: 1px solid var(--fio-sys-primary-color);
+		/* border-left: 1px solid var(--fio-sys-primary-color); */
+		justify-content: start;
 	}
 	/* footer .logos li {
 		align-self: flex-end;
