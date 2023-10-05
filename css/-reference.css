@@ -10,7 +10,8 @@
 	--fio-ref-color-text: var(--fio-ref-color-neutral);
 	--fio-ref-color-success: 135, 60%;
 	--fio-ref-color-warning: 50, 100%;
-	--fio-ref-color-error: 5, 70%;
+	--fio-ref-color-attention: 30, 100%;
+	--fio-ref-color-error: 5, 80%;
 	--fio-ref-color-extra: 0, 0%;
 
 	/* Palettes */
@@ -112,6 +113,21 @@
 	--fio-ref-color-warning-95: hsl(var(--fio-ref-color-warning), 95%);
 	--fio-ref-color-warning-99: hsl(var(--fio-ref-color-warning), 99%);
 	--fio-ref-color-warning-100: hsl(var(--fio-ref-color-warning), 100%);
+
+
+	--fio-ref-color-attention-0: hsl(var(--fio-ref-color-attention), 0%);
+	--fio-ref-color-attention-10: hsl(var(--fio-ref-color-attention), 10%);
+	--fio-ref-color-attention-20: hsl(var(--fio-ref-color-attention), 20%);
+	--fio-ref-color-attention-30: hsl(var(--fio-ref-color-attention), 30%);
+	--fio-ref-color-attention-40: hsl(var(--fio-ref-color-attention), 40%);
+	--fio-ref-color-attention-50: hsl(var(--fio-ref-color-attention), 50%);
+	--fio-ref-color-attention-60: hsl(var(--fio-ref-color-attention), 60%);
+	--fio-ref-color-attention-70: hsl(var(--fio-ref-color-attention), 70%);
+	--fio-ref-color-attention-80: hsl(var(--fio-ref-color-attention), 80%);
+	--fio-ref-color-attention-90: hsl(var(--fio-ref-color-attention), 90%);
+	--fio-ref-color-attention-95: hsl(var(--fio-ref-color-attention), 95%);
+	--fio-ref-color-attention-99: hsl(var(--fio-ref-color-attention), 99%);
+	--fio-ref-color-attention-100: hsl(var(--fio-ref-color-attention), 100%);
 
 	--fio-ref-color-error-0: hsl(var(--fio-ref-color-error), 0%);
 	--fio-ref-color-error-10: hsl(var(--fio-ref-color-error), 10%);

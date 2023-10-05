@@ -244,6 +244,13 @@ section .page-nav .button-secondary {
 .bg-warning-color-dark {background-color:var(--fio-sys-warning-color-dark) !important;}
 .bg-warning-color-extra-dark {background-color:var(--fio-sys-warning-color-extra-dark) !important;}
 
+.bg-attention-color {background-color:var(--fio-sys-attention-color-medium) !important;}
+.bg-attention-color-extra-light {background-color:var(--fio-sys-attention-color-extra-light) !important;}
+.bg-attention-color-light {background-color:var(--fio-sys-attention-color-light) !important;}
+.bg-attention-color-dark {background-color:var(--fio-sys-attention-color-dark) !important;}
+.bg-attention-color-extra-dark {background-color:var(--fio-sys-attention-color-extra-dark) !important;}
+
+
 .bg-error-color {background-color:var(--fio-sys-error-color-medium) !important;}
 .bg-error-color-extra-light {background-color:var(--fio-sys-error-color-extra-light) !important;}
 .bg-error-color-light {background-color:var(--fio-sys-error-color-light) !important;}

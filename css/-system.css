@@ -47,6 +47,14 @@
 	--fio-sys-warning-color-dark: var(--fio-ref-color-warning-20);
 	--fio-sys-warning-color-extra-dark:  var(--fio-ref-color-warning-10);
 
+
+	/* Attention */
+	--fio-sys-attention-color-light: var(--fio-ref-color-attention-50);
+	--fio-sys-attention-color-extra-light: var(--fio-ref-color-attention-80);
+	--fio-sys-attention-color-medium: var(--fio-ref-color-attention-40);
+	--fio-sys-attention-color-dark: var(--fio-ref-color-attention-20);
+	--fio-sys-attention-olor-extra-dark:  var(--fio-ref-color-attention-10);
+
 	/* Error */
 	--fio-sys-error-color-light: var(--fio-ref-color-error-60);
 	--fio-sys-error-color-extra-light: var(--fio-ref-color-error-95);
