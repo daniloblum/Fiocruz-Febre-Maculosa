@@ -29,10 +29,10 @@
 
 // MOBILE
 
-var sidebarBtn = document.getElementByID('sidebar-toggle');
-var content = $('.content');
-var sidebarMobile = $('.sidebar');
-var btn = $('.btn');
+var sidebarBtn = document.getElementById('sidebar-toggle');
+var content = document.querySelector('.content');
+var sidebarMobile = document.querySelector('.sidebar');
+var btn = document.querySelector('.btn');
 
 function touchControl(event, obj) {
 	if (event == true) {
@@ -40,35 +40,35 @@ function touchControl(event, obj) {
 	}
 }
 
-sidebarBtn.on('click', function () {
-	if (sidebarMobile.hasClass('sidebar--open')) {
+sidebarBtn.addEventListener('click', function () {
+	if (sidebarMobile.classList.contains('sidebar--open')) {
 		// closing
-		sidebarMobile.removeClass('sidebar--open');
-		sidebarMobile.addClass('sidebar--close');
+		sidebarMobile.classList.remove('sidebar--open');
+		sidebarMobile.classList.add('sidebar--close');
 
-		sidebarBtn.removeClass('sidebar-toggle--open');
-		sidebarBtn.addClass('sidebar-toggle--close');
+		sidebarBtn.classList.remove('sidebar-toggle--open');
+		sidebarBtn.classList.add('sidebar-toggle--close');
 		// sidebarBtn.css('background-color', '#3c7d1b');
 
-		btn.toggleClass('active');
-		btn.toggleClass('not-active');
+		btn.classList.toggle('active');
+		btn.classList.toggle('not-active');
 
-		content.removeClass('touch-disable');
-		content.addClass('touch-enable');
+		content.classList.remove('touch-disable');
+		content.classList.add('touch-enable');
 	} else {
 		// opening
-		sidebarMobile.removeClass('sidebar--close');
-		sidebarMobile.addClass('sidebar--open');
+		sidebarMobile.classList.remove('sidebar--close');
+		sidebarMobile.classList.add('sidebar--open');
 
-		sidebarBtn.removeClass('sidebar-toggle--close');
-		sidebarBtn.addClass('sidebar-toggle--open');
+		sidebarBtn.classList.remove('sidebar-toggle--close');
+		sidebarBtn.classList.add('sidebar-toggle--open');
 		// sidebarBtn.css('background-color', '#917434');
 
-		btn.toggleClass('active');
-		btn.toggleClass('not-active');
+		btn.classList.toggle('active');
+		btn.classList.toggle('not-active');
 
-		content.removeClass('touch-enable');
-		content.addClass('touch-disable');
+		content.classList.remove('touch-enable');
+		content.classList.add('touch-disable');
 	}
 });
 

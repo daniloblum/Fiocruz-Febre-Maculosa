@@ -202,13 +202,12 @@ pre {
 .heading__block hr {
 	display: block;
 	width: 40px;
-	height:3px;
+	height: 3px;
 	background: var(--fio-sys-tertiary-color);
-	border:none;
+	border: none;
 	opacity: 1;
-    margin: 0;
+	margin: 0;
 }
-
 
 /* -------------------------------- 
 
@@ -283,7 +282,6 @@ Cards de Comparação e Diferenciação
 	font-size: 4rem;
 	font-weight: 600;
 }
-
 
 /*----------------------------- 
 
@@ -398,7 +396,6 @@ Destaques
 		padding: 30px;
 	}
 }
-
 
 audio {
 	width: 100%;
@@ -820,7 +817,7 @@ Modal
 }
 
 .modal .modal-body {
-	padding: 2.75rem;
+	padding: 1.75rem;
 }
 
 /* -------------------------------- 
@@ -1065,8 +1062,6 @@ Slider
 		left: -60px;
 	}
 }
-
-
 
 /* --------------------------------
 
