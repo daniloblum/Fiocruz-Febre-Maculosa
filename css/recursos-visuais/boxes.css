@@ -9,7 +9,7 @@
 	border-radius: 0.75rem;
 	padding: 30px;
 }
-.box-title .h4 {
+.box-title .h5 {
 	padding-bottom: 10px;
 	border-bottom: 1px solid var(--fio-sys-tertiary-color);
 	margin-bottom: 20px;
@@ -60,7 +60,7 @@
 	.box-title {
 		padding: 15px;
 	}
-	.box-title .h4 {
+	.box-title .h5 {
 		padding-left: 40px;
 	}
 	.card-box .box-title__icone {
