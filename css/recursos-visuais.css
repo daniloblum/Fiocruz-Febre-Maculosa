@@ -369,6 +369,9 @@ Destaques
 
 /*Cards de texto (com título, sem título e lado a lado)*/
 
+.card-destaque {
+	padding: 20px;
+}
 .card-destaque p {
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -377,6 +380,11 @@ Destaques
 	margin-bottom: 0;
 }
 
+@media (min-width: 992px) {
+	.card-destaque {
+		padding: 30px;
+	}
+}
 /*Olho de texto*/
 
 .olho-de-texto p {

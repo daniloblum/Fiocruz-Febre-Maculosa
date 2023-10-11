@@ -93,6 +93,7 @@ a:visited {
 	font-family: var(--fio-sys-typography-paragraph-family), sans-serif;
 	color: var(--fio-sys-primary-color);
 	text-decoration: none;
+	word-wrap: break-word;
 }
 
 a:hover,
