@@ -69,23 +69,23 @@
 
 		<script  type="text/javascript" language="javascript">
 			const shareImageAsset = async(url, title) => {
-			console.log('test');
 
 			const response = await fetch(url.toString());
-			const blob = await response.blob();
+			const blob = await response.blob();			
+			
 
 			const filesArray = [
-			new File([blob], title, {type: blob.type})
+				new File([blob], title, { type: blob.type } )
 			];
 			const shareData = {
-			title: title,
-			files: filesArray,
-			text: 'Conheça o curso: '
-			};
+				title: title,
+				files: filesArray,
+				text: `O cachorro, assim como o cavalo e a capivara, pode participar do ciclo de transmissão da doença, pois além de ser fonte de alimentação para os carrapatos, pode auxiliar no deslocamento de vetores infectados. Por isso e pela proximidade com a população humana, é preciso ficar atento à presença do vetor nos animais e no ambiente.`
+			};			
 
 			if (navigator.canShare && navigator.canShare(shareData)) {
-			await navigator.share(shareData);
-			console.log('shared')
+				await navigator.share(shareData);
+				console.log('shared')
 			}
 		};  
 		</script>
