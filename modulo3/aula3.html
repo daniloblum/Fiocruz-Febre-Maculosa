@@ -10,8 +10,6 @@
 		<meta name="keywords" content="febremaculosa, saudecoletiva,saudepublica, vigilanciaemsaude, tratamentoimediato, educação, informação, CampusVirtualFiocruz, IOC, Fiocruz, SUS" />
 		<meta name="description" content="O curso Febre Maculosa: diagnóstico, tratamento, transmissão e prevenção, elaborado pelo Campus Virtual Fiocruz em parceria com o IOC - Instituto Osvaldo Cruz, apresenta uma proposta de capacitação voltada para profissionais de saúde de forma a potencializar o conhecimento sobre a doença e consequentemente minimizar o número de óbitos. No entanto, o curso está aberto a população, tendo em vista o compromisso da Fiocruz com a democratização do conhecimento e do acesso aberto à informação." />
 
-
-
 		<!-- Linkedin e Facebook Images -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/febre-maculosa/index.html" />
@@ -67,6 +65,43 @@
 		 gtag('js', new Date());
 
 		 gtag('config', 'G-KDSSBXXYKP');
+		</script>
+
+		<script  type="text/javascript" language="javascript">
+			const shareImageAsset = async(url, title) => {
+
+			const response = await fetch(url.toString());
+			const blob = await response.blob();			
+			
+			
+			const filesArray = [
+				new File([blob], title, { type: blob.type } )
+			];
+			const shareData = {
+				title: title,
+				files: filesArray,
+				text: 'Imagem do curso de Febre Macuolsa'
+			};			
+			
+			
+			if(navigator.canShare){
+				
+				if(navigator.canShare(shareData)){
+				
+					await navigator.share(shareData);					
+				
+				}else{
+					
+					alert('Este Navegador não tem permissão para compartilhar o conteúdo ou não suporta o compartilhamento');	
+
+				}
+				
+			}else{
+
+				alert('Este Navegador não tem permissão para compartilhar o conteúdo');
+
+			}			
+		};  
 		</script>
 
 		<!-- Bootstrap CSS -->
@@ -224,19 +259,16 @@
 										</div>
 
 										<div class="row justify-content-center align-items-center">
-											<div class="col-auto">
-												<span class="material-symbols-rounded">share</span>
-											</div>
 											<div class="col">
 												<p class="m-0"><strong>Compartilhe este card!</strong></p>
 											</div>
 											<div class="col-md-auto text-center mt-3 mt-md-0 px-0">
-												<a class="button-secondary copy-to-clip" href="../images/compartilhamento/mod3-aula3-card5-1080x1080.jpg" download="mod3-aula3-card5-1080x1080.jpg" title="">
+												<button class="button-secondary copy-to-clip d-inline-block d-lg-none" onclick="shareImageAsset('../images/compartilhamento/JPG/mod3-aula3-card1.jpg', 'mod3-aula3-card1.jpg')">
 													<span class="redes-sociais">
-														<img src="../images/ic-download.svg" class="img-fluid" width="24px" />
+														<img src="../images/ic-share.svg" class="img-fluid" width="24px" />
 													</span>
-													<span class="visually-hidden">Baixe este card</span>
-												</a>
+													<span class="visually-hidden">Compartilhe</span>
+												</button>
 
 												<a class="button-secondary copy-to-clip" href="https://www.facebook.com/sharer/sharer.php?u=https://mooc.campusvirtual.fiocruz.br/rea/febre-maculosa/images/compartilhamento/facebook/mod3-aula3-card1.jpg" target="_blank">
 													<span class="redes-sociais">
@@ -250,6 +282,13 @@
 														<img src="../images/ic-X.svg" class="img-fluid" width="24px" />
 													</span>
 													<span class="visually-hidden">X</span>
+												</a>
+
+												<a class="button-secondary copy-to-clip" href="../images/compartilhamento/JPG/mod3-aula3-card1.jpg" download="mod3-aula3-card1.jpg" title="">
+													<span class="redes-sociais">
+														<img src="../images/ic-download.svg" class="img-fluid" width="24px" />
+													</span>
+													<span class="visually-hidden">Baixe este card</span>
 												</a>
 											</div>
 										</div>
