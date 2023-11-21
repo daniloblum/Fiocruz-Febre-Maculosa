@@ -280,14 +280,14 @@
 
 							<div class="row justify-content-center mb-5">
 								<div class="col-12 col-md-10 col-lg-8">
-									<p>Observe o mapa com o número de casos por região, referente a dados de 2023, seguido pelo número de mortes (entre parênteses).</p>
+									<p>Observe o mapa com o número de casos seguidos pelo número de mortes (entre parênteses) de Febre Maculosa Brasileira(FMB) por região, de acordo com os dados consolidados do Ministério da Saúde, referentes ao ano de 2022.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center mb-5">
 								<div class="col-12 col-md-12 col-lg-8">
 									<div class="heading__block">
-										<h4 class="heading__title text-center h5">Óbitos por FMB, por regiões</h4>
+										<h4 class="heading__title text-center h5">Casos e óbitos por FMB, por UF</h4>
 										<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">touch_app</span> <span class="d-none d-lg-inline-block">Clique</span> <span class="d-inline-block d-lg-none">Toque</span> nas áreas indicadas para visualizar a informação</p>
 									</div>
 
@@ -296,15 +296,21 @@
 										<svg id="info-mapa-brasil" role="img" aria-describedby="info-title info-description desc1 desc2 desc3 desc4" data-name="info-mapa-brasil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 672 672">
 											<title id="info-title">Óbitos por FMB, por regiões</title>
 											<desc id="info-description">Mapa do Brasil com sinalizações nos estados onde houveram óbitos por Febre Maculosa</desc>
-											<desc id="desc1">1) Santa Catarina: 2 óbitos por FMB</desc>
-											<desc id="desc2">2) Paraná: 1 óbito por FMB</desc>
-											<desc id="desc3">3) São Paulo: 15(10) óbitos por FMB</desc>
-											<desc id="desc4">4) Rio de Janeiro: 4(2) óbitos por FMB</desc>
-											<desc id="desc5">5) Espírito Santo: 17(4) óbitos por FMB</desc>
-											<desc id="desc6">6) Minas Gerais: 17(2) óbitos por FMB</desc>
-											<desc id="desc7">7) Distrito Federal: 2 óbitos por FMB</desc>
-											<desc id="desc8">8) Tocantins: 1 óbito por FMB</desc>
-											<desc id="desc9">9) Ceará: 2 óbitos por FMB</desc>
+											<desc id="desc1">1) Santa Catarina: 42 casos</desc>
+											<desc id="desc2">2) Paraná: 8 casos, 2 óbito por FMB</desc>
+											<desc id="desc3">3) São Paulo: 54 casos, 37 óbitos por FMB</desc>
+											<desc id="desc4">4) Rio de Janeiro: 26 casos, 9 óbitos por FMB</desc>
+											<desc id="desc5">5) Espírito Santo: 26 casos, 11 óbitos por FMB</desc>
+											<desc id="desc6">6) Minas Gerais: 25 casos, 6 óbitos por FMB</desc>
+											<desc id="desc7">7) Ceará: 6 casos</desc>
+											<desc id="desc8">8) Maranhão: 3 casos, 1 óbitos por FMB</desc>
+											<desc id="desc9">9) Alagoas: 1 caso</desc>
+											<desc id="desc10">10) Bahia: 2 casos</desc>
+											<desc id="desc11">11) Rio Grande do Sul: 2 casos</desc>
+											<desc id="desc12">12) Mato Grosso: 1 caso</desc>
+											<desc id="desc13">13) Goiás: 1 caso</desc>
+											<!-- <desc id="desc7">7) Distrito Federal: 2 óbitos por FMB</desc> -->
+											<!-- <desc id="desc8">8) Tocantins: 1 óbito por FMB</desc> -->
 
 											<g id="regiao-norte">
 												<path
@@ -470,53 +476,81 @@
 												/>
 											</g>
 
-											<g id="bt-sc" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="2 óbitos por FMB" data-bs-original-title="Santa Catarina">
+											<g id="bt-rs" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="2 casos" data-bs-original-title="Rio Grande do Sul">
+												<circle class="cls-3" cx="356.5" cy="585.5" r="15.5" />
+												<circle class="cls-1" cx="356.5" cy="585.5" r="8.25" />
+											</g>
+
+											<g id="bt-mt" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="1 caso" data-bs-original-title="Mato Grosso">
+												<circle class="cls-3" cx="320.28" cy="321.01" r="15.5" />
+												<circle class="cls-1" cx="320.28" cy="321.01" r="8.25" />
+											</g>
+											<g id="bt-go" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="1 caso" data-bs-original-title="Goiás">
+												<circle class="cls-3" cx="402.28" cy="383.01" r="15.5" />
+												<circle class="cls-1" cx="402.28" cy="383.01" r="8.25" />
+											</g>
+
+											<g id="bt-ma" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="3 casos, (1) óbito por FMB" data-bs-original-title="Maranhão">
+												<circle class="cls-3" cx="484.12" cy="194.77" r="15.5" />
+												<circle class="cls-1" cx="484.12" cy="194.77" r="8.25" />
+											</g>
+											<g id="bt-ba" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="(2) óbitos por FMB" data-bs-original-title="Bahia">
+												<circle class="cls-3" cx="540.12" cy="307.77" r="15.5" />
+												<circle class="cls-1" cx="540.12" cy="307.77" r="8.25" />
+											</g>
+											<g id="bt-al" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="(1) óbito por FMB" data-bs-original-title="Alagoas">
+												<circle class="cls-3" cx="624.12" cy="264.77" r="15.5" />
+												<circle class="cls-1" cx="624.12" cy="264.77" r="8.25" />
+											</g>
+
+											<g id="bt-pr" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="8 casos, (2) óbitos por FMB" data-bs-original-title="Paraná">
 												<circle class="radar cls-3" cx="387.5" cy="510.5" r="15.5" />
 												<circle class="core cls-1" cx="387.5" cy="510.5" r="8.25" />
 											</g>
 
-											<g id="bt-pr" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="1 óbito por FMB" data-bs-original-title="Paraná">
+											<g id="bt-sc" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="42 casos" data-bs-original-title="Santa Catarina">
 												<circle class="cls-3" cx="434.5" cy="558.14" r="15.5" />
 												<circle class="cls-1" cx="434.5" cy="558.14" r="8.25" />
 											</g>
 
-											<g id="bt-sp" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="15(10) óbitos por FMB" data-bs-original-title="São Paulo">
+											<g id="bt-sp" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="54 casos, (37) óbitos por FMB" data-bs-original-title="São Paulo">
 												<circle class="cls-3" cx="440.02" cy="479.5" r="15.5" />
 												<circle class="cls-1" cx="440.02" cy="479.5" r="8.25" />
 											</g>
 
-											<g id="bt-rj" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="4(2) óbitos por FMB" data-bs-original-title="Rio de Janeiro">
+											<g id="bt-rj" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="26 casos, (9) óbitos por FMB" data-bs-original-title="Rio de Janeiro">
 												<circle class="cls-3" cx="526.33" cy="483.08" r="15.5" />
 												<circle class="cls-1" cx="526.33" cy="483.08" r="8.25" />
 											</g>
 
-											<g id="bt-es" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="17(4) óbitos por FMB" data-bs-original-title="Espírito Santo">
+											<g id="bt-es" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="26 casos, (11) óbitos por FMB" data-bs-original-title="Espírito Santo">
 												<circle class="cls-3" cx="567.25" cy="431" r="15.5" />
 												<circle class="cls-1" cx="567.25" cy="431" r="8.25" />
 											</g>
 
-											<g id="bt-mg" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="17(2) óbitos por FMB" data-bs-original-title="Minas Gerais">
+											<g id="bt-mg" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="25 casos, (6) óbitos por FMB" data-bs-original-title="Minas Gerais">
 												<circle class="cls-3" cx="501.67" cy="410.59" r="15.5" />
 												<circle class="cls-1" cx="501.67" cy="410.59" r="8.25" />
 											</g>
 
-											<g id="bt-df" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="2 óbitos por FMB" data-bs-original-title="Distrito Federal">
+											<!-- <g id="bt-df" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="2 óbitos por FMB" data-bs-original-title="Distrito Federal">
 												<circle class="cls-3" cx="442.28" cy="363.01" r="15.5" />
 												<circle class="cls-1" cx="442.28" cy="363.01" r="8.25" />
-											</g>
+											</g> -->
 
-											<g id="bt-to" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="1 óbito por FMB" data-bs-original-title="Tocantins">
+											<!-- <g id="bt-to" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="1 óbito por FMB" data-bs-original-title="Tocantins">
 												<circle class="cls-3" cx="437.12" cy="280.77" r="15.5" />
 												<circle class="cls-1" cx="437.12" cy="280.77" r="8.25" />
-											</g>
+											</g> -->
 
-											<g id="bt-ce" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="2 óbitos por FMB" data-bs-original-title="Ceará">
+											<g id="bt-ce" class="popover info-bts" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="(6) óbitos por FMB" data-bs-original-title="Ceará">
 												<circle class="cls-3" cx="580.38" cy="189.59" r="15.5" />
 												<circle class="cls-1" cx="580.38" cy="189.59" r="8.25" />
 											</g>
 										</svg>
 
-										<p class="text-center">Ignorados 17(3)</p>
+										<p class="text-center">Ignorados/ em branco: 36 (11)</p>
+										<p class="text-muted">(São considerados ignorados/ em branco aqueles casos e/ou óbitos cujas fichas de notificação não há o respectivo registro da UF de ocorrência)</p>
 									</div>
 								</div>
 							</div>
