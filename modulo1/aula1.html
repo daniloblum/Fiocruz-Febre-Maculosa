@@ -55,7 +55,7 @@
 		<meta name="msapplication-TileImage" content="../images/icons/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
 
-		<title>Febre Maculosa: dianóstico, tratamento, transmissão e prevenção- Módulo 1 - Aula 1</title>
+		<title>Curso Febre Maculosa: diagnóstico, tratamento, transmissão e prevenção - Módulo 1 - Aula 1</title>
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDSSBXXYKP"></script>
@@ -69,42 +69,29 @@
 			gtag('config', 'G-KDSSBXXYKP');
 		</script>
 
-<script  type="text/javascript" language="javascript">
-	const shareImageAsset = async(url, title) => {
+		<script type="text/javascript" language="javascript">
+			const shareImageAsset = async (url, title) => {
+				const response = await fetch(url.toString());
+				const blob = await response.blob();
 
-	const response = await fetch(url.toString());
-	const blob = await response.blob();			
-	
-	
-	const filesArray = [
-		new File([blob], title, { type: blob.type } )
-	];
-	const shareData = {
-		title: title,
-		files: filesArray,
-		text: 'Imagem do curso de Febre Macuolsa'
-	};			
-	
-	
-	if(navigator.canShare){
-		
-		if(navigator.canShare(shareData)){
-		
-			await navigator.share(shareData);					
-		
-		}else{
-			
-			alert('Este Navegador não tem permissão para compartilhar o conteúdo ou não suporta o compartilhamento');	
+				const filesArray = [new File([blob], title, { type: blob.type })];
+				const shareData = {
+					title: title,
+					files: filesArray,
+					text: 'Imagem do curso de Febre Macuolsa',
+				};
 
-		}
-		
-	}else{
-
-		alert('Este Navegador não tem permissão para compartilhar o conteúdo');
-
-	}			
-};  
-</script>
+				if (navigator.canShare) {
+					if (navigator.canShare(shareData)) {
+						await navigator.share(shareData);
+					} else {
+						alert('Este Navegador não tem permissão para compartilhar o conteúdo ou não suporta o compartilhamento');
+					}
+				} else {
+					alert('Este Navegador não tem permissão para compartilhar o conteúdo');
+				}
+			};
+		</script>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
@@ -128,7 +115,8 @@
 						<section class="sidebar__section py-0">
 							<img src="../images/logos/fiocruz-campus-virtual--white.png" alt="Campus Virtual Fiocruz" width="60%" />
 						</section>
-						<h1>Febre Maculosa: <span>dianóstico, tratamento, transmissão e prevenção</span></h1>
+						<span class="h6 pre-title">Curso</span>
+						<h1>Febre Maculosa: <span>diagnóstico, tratamento, transmissão e prevenção</span></h1>
 					</section>
 					<hr />
 					<section class="sidebar__section py-2">
@@ -556,7 +544,6 @@
 												<p class="m-0"><strong>Compartilhe este card!</strong></p>
 											</div>
 											<div class="col-md-auto text-center mt-3 mt-md-0 px-0">
-
 												<button class="button-secondary copy-to-clip d-inline-block d-lg-none" onclick="shareImageAsset('../images/compartilhamento/JPG/mod1-aula1-card1.jpg', 'mod1-aula1-card1.jpg')">
 													<span class="redes-sociais">
 														<img src="../images/ic-share.svg" class="img-fluid" width="24px" />
@@ -578,12 +565,14 @@
 													<span class="visually-hidden">X</span>
 												</a>
 
-												<strong><a class="button-secondary copy-to-clip" href="../images/compartilhamento/JPG/mod1-aula1-card1.jpg" download="mod1-aula1-card1.jpg" title="">
-													<span class="redes-sociais">
-														<img src="../images/ic-download.svg" class="img-fluid" width="24px" />
-													</span>
-													<span class="visually-hidden">Baixe este card</span>
-												</a></strong>
+												<strong
+													><a class="button-secondary copy-to-clip" href="../images/compartilhamento/JPG/mod1-aula1-card1.jpg" download="mod1-aula1-card1.jpg" title="">
+														<span class="redes-sociais">
+															<img src="../images/ic-download.svg" class="img-fluid" width="24px" />
+														</span>
+														<span class="visually-hidden">Baixe este card</span>
+													</a></strong
+												>
 											</div>
 										</div>
 									</div>
@@ -742,32 +731,31 @@
 								<h5 class="mb-2">Páginas de web</h5>
 								<div class="list">
 									<ul class="list-group">
-										<li class="list-group-item" list-style="default"><a href='https://revistas.ufg.br/index.php/iptsp/article/view/32220' target='_blank'>Diagnóstico diferencial entre a Febre Maculosa Brasileira e o Dengue no contexto das doenças febris agudas</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://revistas.ufg.br/index.php/iptsp/article/view/32220" target="_blank">Diagnóstico diferencial entre a Febre Maculosa Brasileira e o Dengue no contexto das doenças febris agudas</a></li>
 
-										<li class="list-group-item" list-style="default"><a href='https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa' target='_blank'>Febre maculosa – Ministério da Saúde</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa" target="_blank">Febre maculosa – Ministério da Saúde</a></li>
 
-										<li class="list-group-item" list-style="default"><a href='https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa/situacao-epidemiologica' target='_blank'>Óbitos por Febre Maculosa. Brasil, Regiões e Unidades Federadas (Infecção) 2007-2023</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa/situacao-epidemiologica" target="_blank">Óbitos por Febre Maculosa. Brasil, Regiões e Unidades Federadas (Infecção) 2007-2023</a></li>
 
-										<li class="list-group-item" list-style="default"><a href='https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa/publicacoes' target='_blank'>Publicações e notas técnicas do Ministério da Saúde – Febre maculosa</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa/publicacoes" target="_blank">Publicações e notas técnicas do Ministério da Saúde – Febre maculosa</a></li>
 									</ul>
 								</div>
 
 								<h5 class="mb-2">Vídeo</h5>
 								<div class="list">
 									<ul class="list-group">
-										<li class="list-group-item" list-style="default"><a href='https://www.youtube.com/watch?time_continue=4364&v=70FmSod5HkI&embeds_referring_euri=https%3A%2F%2Fwww.ioc.fiocruz.br%2F&source_ve_path=MjM4NTE&feature=emb_title' target='_blank'>Febre maculosa brasileira: uma zoonose visível circunstancialmente</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://www.youtube.com/watch?time_continue=4364&v=70FmSod5HkI&embeds_referring_euri=https%3A%2F%2Fwww.ioc.fiocruz.br%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Febre maculosa brasileira: uma zoonose visível circunstancialmente</a></li>
 									</ul>
 								</div>
 
 								<h5 class="mb-2">Documentos</h5>
 								<div class="list">
 									<ul class="list-group">
-										<li class="list-group-item" list-style="default"><a href='https://dive.sc.gov.br/phocadownload/doencas-agravos/Febre Maculosa Brasileira/Publica%C3%A7%C3%B5es/1 - Ficha de notifica%C3%A7%C3%A3o referente a Febre Maculosa.pdf' target='_blank'>Ficha de notificação da febre maculosa – Ministério da Saúde</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://dive.sc.gov.br/phocadownload/doencas-agravos/Febre Maculosa Brasileira/Publica%C3%A7%C3%B5es/1 - Ficha de notifica%C3%A7%C3%A3o referente a Febre Maculosa.pdf" target="_blank">Ficha de notificação da febre maculosa – Ministério da Saúde</a></li>
 
-										<li class="list-group-item" list-style="default"><a href='https://dive.sc.gov.br/phocadownload/doencas-agravos/Febre Maculosa Brasileira/Publica%C3%A7%C3%B5es/3 - Orienta%C3%A7%C3%B5es de atividade de campo e EPI para investiga%C3%A7%C3%A3o ambiental.pdf' target='_blank'>Vigilância de ambientes nas Riquetsioses - Orientações atividades de campo</a></li>
+										<li class="list-group-item" list-style="default"><a href="https://dive.sc.gov.br/phocadownload/doencas-agravos/Febre Maculosa Brasileira/Publica%C3%A7%C3%B5es/3 - Orienta%C3%A7%C3%B5es de atividade de campo e EPI para investiga%C3%A7%C3%A3o ambiental.pdf" target="_blank">Vigilância de ambientes nas Riquetsioses - Orientações atividades de campo</a></li>
 									</ul>
 								</div>
-								
 							</div>
 						</div>
 					</div>

@@ -37,7 +37,14 @@
 .sidebar__header {
 	padding: 0 var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-md);
 }
-
+.sidebar__header .pre-title {
+	display: block;
+	font-family: var(--fio-sys-typography-head-family), sans-serif;
+	font-size: var(--fio-sys-typography-paragraph-size);
+	color: var(--fio-sys-tertiary-color-extra-light) !important;
+	margin-bottom: 10px;
+	/* padding: 0 20px; */
+}
 .sidebar__header h1 {
 	display: block;
 	color: var(--fio-sys-tertiary-color-extra-light) !important;
@@ -166,7 +173,6 @@
 .sidebar__section img {
 	padding: 0;
 }
-
 
 .content {
 	margin-left: 280px;
